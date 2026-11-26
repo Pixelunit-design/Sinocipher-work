@@ -1,0 +1,130 @@
+{
+ "meta": {
+  "fetched_at": "2026-11-26",
+  "source": "https://www.ipv6testingcenter.com/index/index/cert_list.html",
+  "keywords": [
+   "中安云科"
+  ],
+  "failed": [],
+  "note": "vendor_name模糊匹配抓取；快照式覆盖；接口每页10条"
+ },
+ "certs": [
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003391",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunkeke Technology Development (Shandong) Co., Ltd",
+   "product_name": "中安云科金融数据密码机 SC600 / Zhongan Yunke Financial Cryptographic Server SC600",
+   "product_version": "V1",
+   "applied_ts": "2026-11-02",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003389",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunkeke Technology Development (Shandong) Co., Ltd",
+   "product_name": "数据库加密网关 SC-DEG231 / Database Encryption Gateway SC-DEG231",
+   "product_version": "V1",
+   "applied_ts": "2026-11-02",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003388",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunke Science and Technology Development (Shandong) Co., Ltd",
+   "product_name": "密码服务管理平台 CCSP 101 / Cryptographic Service Management Platform CCSP 101",
+   "product_version": "V1",
+   "applied_ts": "2026-11-02",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003254",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunkeke Technology Development (Shandong) Co., Ltd",
+   "product_name": "云服务器密码机SC6000、SC-CHSM2410 / Cloud Host Cryptographic Server SC6000 、SC-CHSM2410",
+   "product_version": "V1.0.1",
+   "applied_ts": "2025-12-31",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003247",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunkeke Technology Development (Shandong) Co., Ltd",
+   "product_name": "IPSec /SSL VPN综合安全网关 SC-ISG228、SC-ISG251 / IPSec / SSL VPN Integrated Security Gateway SC-ISG228、SC-ISG251",
+   "product_version": "V1.0.1",
+   "applied_ts": "2025-12-24",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003245",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunkeke Technology Development (Shandong) Co., Ltd",
+   "product_name": "签名验签服务器 SC800 / Sign And Verify SC800",
+   "product_version": "V2.0",
+   "applied_ts": "2025-12-23",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003243",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunkeke Technology Development (Shandong) Co., Ltd",
+   "product_name": "时间戳服务器 SC500 / Time Stamp Server SC500",
+   "product_version": "V1",
+   "applied_ts": "2025-12-23",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-003244",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunkeke Technology Development (Shandong) Co., Ltd",
+   "product_name": "服务器密码机 SC700、SJJ19118 / Cryptographic Server SC700、SJJ19118",
+   "product_version": "V2.0",
+   "applied_ts": "2025-12-23",
+   "test_spec": "5.1.4",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  },
+  {
+   "keyword": "中安云科",
+   "logo_id": "02-C-002557",
+   "extended_test_category": "C",
+   "application_phase": 2,
+   "vendor_name": "中安云科科技发展（山东）有限公司 / Zhongan Yunke Technology Development (Shandong) Co. LTD",
+   "product_name": "密码服务器 SC-MCS2210 / Cryptographic Server SC-MCS2210",
+   "product_version": "V1.0.1",
+   "applied_ts": "2023-01-11",
+   "test_spec": "5.1.2",
+   "mst_disp": "Core Protocols",
+   "disp": "Phase-2"
+  }
+ ]
+}

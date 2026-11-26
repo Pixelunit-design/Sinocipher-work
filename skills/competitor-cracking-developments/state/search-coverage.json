@@ -1,0 +1,81 @@
+{
+ "run_id": "R2026-11F",
+ "run_date": "2026-11-26",
+ "window": "2026-11-26(增量)+补收",
+ "channel": "domain_search(WebSearch被审批拦截,备用通道生效)",
+ "queries": 4,
+ "coverage": [
+  {
+   "company": "三未信安",
+   "status": "已检索未发现本窗口新增(补收11.18两单)",
+   "result_count": 2
+  },
+  {
+   "company": "格尔软件",
+   "status": "已检索",
+   "result_count": 3
+  },
+  {
+   "company": "信安世纪",
+   "status": "已检索",
+   "result_count": 3
+  },
+  {
+   "company": "吉大正元",
+   "status": "已检索未发现本窗口新增",
+   "result_count": 0
+  },
+  {
+   "company": "数字认证",
+   "status": "已检索",
+   "result_count": 2
+  },
+  {
+   "company": "天融信",
+   "status": "已检索",
+   "result_count": 2
+  },
+  {
+   "company": "绿盟科技",
+   "status": "已检索未发现本窗口新增(11.24攻防演练获奖,低权重)",
+   "result_count": 0
+  },
+  {
+   "company": "深信服",
+   "status": "已检索",
+   "result_count": 2
+  },
+  {
+   "company": "安恒信息",
+   "status": "已检索",
+   "result_count": 1
+  },
+  {
+   "company": "奇安信",
+   "status": "已检索",
+   "result_count": 2
+  },
+  {
+   "company": "启明星辰",
+   "status": "已检索",
+   "result_count": 2
+  },
+  {
+   "company": "电科网安",
+   "status": "已检索未发现本窗口新增(52周新低行情信息)",
+   "result_count": 0
+  },
+  {
+   "company": "渔翁信息",
+   "status": "辽宁烟草公示中命中(第三候选人)",
+   "result_count": 1
+  },
+  {
+   "company": "芯盾时代/竹云/美创/天空卫士/江南天安/海泰方圆/江南科友/数盾",
+   "status": "本轮聚合源未覆盖,下期轮转重点",
+   "result_count": 0
+  }
+ ],
+ "next_check": "2026-11-27起轮转补查:身份安全与数据安全中小厂商+政采平台逐日扫描",
+ "note": "第三轮补查(11.26 15:30)完成4家核心竞品逐家覆盖；发现GB/T 35275-2026起草单位含中安云科(待核验)"
+}

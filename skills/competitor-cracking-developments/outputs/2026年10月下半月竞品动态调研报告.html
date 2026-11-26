@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月下半月竞品动态调研报告 | 中安云科</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+    background: #f5f7fa; color: #2c3e50; line-height: 1.75;
+    padding: 0 0 60px;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #0b3d6b 0%, #1565a8 55%, #1e88c7 100%);
+    color: #fff; padding: 46px 0 38px; margin-bottom: 34px;
+    box-shadow: 0 4px 22px rgba(11,61,107,.22);
+  }
+  header h1 { font-size: 30px; font-weight: 700; letter-spacing: .5px; }
+  header .sub { margin-top: 12px; font-size: 14px; opacity: .88; }
+  header .tags { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+  header .tag {
+    background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.34);
+    padding: 5px 13px; border-radius: 14px; font-size: 12.5px;
+  }
+
+  /* Summary cards */
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 34px; }
+  .card {
+    background: #fff; border-radius: 10px; padding: 20px 20px 18px;
+    border-left: 4px solid #1565a8; box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  }
+  .card.urgent { border-left-color: #c0392b; }
+  .card.urgent .num { color: #c0392b; }
+  .card .num { font-size: 27px; font-weight: 700; color: #0b3d6b; line-height: 1.2; }
+  .card .num small { font-size: 14px; font-weight: 600; }
+  .card .lbl { font-size: 12.5px; color: #7a8899; margin-top: 6px; }
+
+  /* Section */
+  section { margin-bottom: 40px; }
+  h2.sec {
+    font-size: 20px; color: #0b3d6b; padding: 0 0 12px 14px;
+    border-left: 5px solid #1e88c7; border-bottom: 1px solid #e2e9f0;
+    margin-bottom: 22px; display: flex; align-items: baseline; gap: 12px;
+  }
+  h2.sec .cnt { font-size: 12.5px; color: #8b9aab; font-weight: 400; }
+  h2.sec.red { border-left-color: #c0392b; color: #8e2b21; }
+
+  /* Alert box */
+  .alert {
+    background: linear-gradient(135deg, #fdf0ee 0%, #fff9f8 100%);
+    border: 1px solid #f0c7c1; border-left: 5px solid #c0392b;
+    border-radius: 0 10px 10px 0; padding: 22px 26px; margin-bottom: 20px;
+  }
+  .alert h3 { font-size: 17px; color: #8e2b21; margin-bottom: 12px; }
+  .alert p { font-size: 14px; color: #4a3a38; margin-bottom: 10px; }
+  .alert p:last-child { margin-bottom: 0; }
+  .alert strong { color: #c0392b; }
+
+  /* Company block */
+  .co {
+    background: #fff; border-radius: 10px; margin-bottom: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.055); overflow: hidden;
+    border-top: 3px solid #1e88c7;
+  }
+  .co.prio { border-top-color: #d9822b; }
+  .co-head {
+    padding: 15px 22px; background: #fbfcfe; border-bottom: 1px solid #edf1f6;
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  }
+  .co-name { font-size: 16.5px; font-weight: 700; color: #0b3d6b; }
+  .co-full { font-size: 12px; color: #93a1b0; }
+  .badge {
+    font-size: 11.5px; padding: 2.5px 9px; border-radius: 10px;
+    background: #e8f1fa; color: #1565a8; font-weight: 600;
+  }
+  .badge.hot { background: #fdf0e3; color: #b8651a; }
+  .badge.warn { background: #fdeaea; color: #c0392b; }
+  .badge.new { background: #e7f6ec; color: #1e7e45; }
+  .co-body { padding: 16px 22px 18px; }
+  .co-body p { font-size: 14px; margin-bottom: 10px; color: #3c4a58; }
+  .co-body p:last-child { margin-bottom: 0; }
+  .co-body strong { color: #0b3d6b; }
+  .src { font-size: 11.5px; color: #9aa8b6; margin-top: 11px; padding-top: 9px; border-top: 1px dashed #e8edf3; }
+
+  /* Policy list */
+  .pol {
+    background: #fff; border-radius: 10px; padding: 18px 22px; margin-bottom: 14px;
+    border-left: 4px solid #7a5cc4; box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  }
+  .pol .ph { font-size: 15px; font-weight: 700; color: #4a3585; margin-bottom: 7px; }
+  .pol .pd { font-size: 13.5px; color: #46535f; }
+  .pol .meta { font-size: 11.5px; color: #98a4b1; margin-top: 8px; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; background: #fff; font-size: 13px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05); border-radius: 8px; overflow: hidden;
+    margin-bottom: 8px; }
+  th { background: #0b3d6b; color: #fff; padding: 11px 12px; text-align: left; font-weight: 600; font-size: 12.5px; }
+  td { padding: 10px 12px; border-bottom: 1px solid #edf1f6; color: #3c4a58; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafcfe; }
+  tr.zayk td { background: #fffbe8; font-weight: 600; color: #7f6000; }
+  td .hi { color: #c0392b; font-weight: 600; }
+  td .ok { color: #1e7e45; font-weight: 600; }
+  td .no { color: #b0bcc8; }
+  .tbl-note { font-size: 11.5px; color: #98a4b1; margin-bottom: 22px; }
+
+  /* Insight box */
+  .insight {
+    background: linear-gradient(135deg, #fff8ec 0%, #fffdf7 100%);
+    border: 1px solid #f0d9b5; border-radius: 10px; padding: 20px 24px; margin-bottom: 18px;
+  }
+  .insight h3 { font-size: 15.5px; color: #9a6216; margin-bottom: 11px; }
+  .insight ul { margin-left: 19px; }
+  .insight li { font-size: 13.8px; color: #4a4238; margin-bottom: 8px; }
+  .insight li:last-child { margin-bottom: 0; }
+
+  .comment {
+    background: #f0f5fa; border-left: 4px solid #1e88c7;
+    padding: 18px 22px; border-radius: 0 8px 8px 0; font-size: 14px; color: #33475b;
+  }
+  .comment p { margin-bottom: 10px; }
+  .comment p:last-child { margin-bottom: 0; }
+
+  footer { text-align: center; font-size: 12px; color: #9aa8b6; margin-top: 44px;
+    padding-top: 22px; border-top: 1px solid #e2e9f0; }
+  @media (max-width: 860px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    header h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>2026年10月下半月竞品动态调研报告</h1>
+    <div class="sub">监测区间：2026年10月20日 — 10月26日　|　衔接《10月上半月报告》，不重复已覆盖条目　|　出具日期：2026年10月26日</div>
+    <div class="tags">
+      <span class="tag">电子认证合规</span>
+      <span class="tag">密码安全</span>
+      <span class="tag">零信任</span>
+      <span class="tag">身份安全</span>
+      <span class="tag">数据安全</span>
+      <span class="tag">后量子迁移</span>
+      <span class="tag">政策标准</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ===== 概览 ===== -->
+  <div class="cards">
+    <div class="card urgent">
+      <div class="num">4 <small>天</small></div>
+      <div class="lbl">距电子认证合规整改<br>过渡期到期（10月30日）</div>
+    </div>
+    <div class="card">
+      <div class="num">13</div>
+      <div class="lbl">本期有价值动态<br>（公司级事件）</div>
+    </div>
+    <div class="card">
+      <div class="num">9</div>
+      <div class="lbl">后量子迁移新增情报<br>（国内+国际）</div>
+    </div>
+    <div class="card">
+      <div class="num">5</div>
+      <div class="lbl">密评/密改招标样本<br>（政府采购）</div>
+    </div>
+  </div>
+
+  <!-- ===== 置顶专题 ===== -->
+  <section>
+    <h2 class="sec red">【置顶专题】电子认证合规整改倒计时：10月30日是硬节点 <span class="cnt">本期最高优先级 · 与公司主业直接相关</span></h2>
+
+    <div class="alert">
+      <h3>⚠ 过渡期 2026年10月30日到期，逾期将被监管处理</h3>
+      <p>新版《电子认证业务规则规范》（<strong>T/CQAE 11034—2025</strong>）推动的电子认证服务机构合规改造，<strong>过渡期截至 2026年10月30日</strong>。这是本周期内唯一一个"过期不可补救"的时间节点。过渡期结束后：机构须对外公示新版 CPS 并按其开展服务；主管部门将组织<strong>专项检查</strong>核验改造落地情况；对逾期未完成整改、不符合规范的主体，依据《电子签名法》《电子认证服务管理办法》实施<strong>监管处理</strong>。</p>
+      <p><strong>监管动作节奏（10月）：</strong>10月14日，工业和信息化部信息技术发展司组织召开<strong>电子认证业务规则规范改造工作推进会</strong>，全国 <strong>58 家</strong>电子认证服务机构主要负责人参会，CFCA 等多家重点机构汇报改造进展，信息技术发展司王威伟副司长作总结讲话。会议明确四项要求：①核心职责不得委托、按期完成改造；②加强能力建设、守牢数据安全底线；③推进与应用方协同改造、加快联调测试；④做好风险防控，<strong>杜绝盲目停服、粗暴停服、无序停服</strong>。</p>
+      <p><strong>新规三大关键导向（CFCA 10月26日公开解读）：</strong></p>
+      <p>① <strong>法定职责归位</strong>——服务告知、身份核验、意愿确认、认证协议签署、数据留存等关键法定环节，由<strong>持牌 CA 机构直接完成</strong>，不得委托；② <strong>协同定位清晰</strong>——合作伙伴仅承担客户服务保障、业务咨询引导、系统对接转发等辅助性工作；③ <strong>证书分级管理</strong>——电子签名认证证书划分为<strong>高等级</strong>与<strong>基础级</strong>两类，对应不同核验强度，匹配不同风险等级的业务场景。</p>
+      <p><strong>监管逻辑的变化：从"机构合规"走向"生态合规"。</strong>整改责任已延伸至业务链条——认证机构须向金融机构、电子合同平台、互联网平台等<strong>全部合作方出具书面告知</strong>，明确整改要求与时间节点，且上下游协同工作须在 10月30日前落地完成。同时明确禁止两类规避行为：<strong>不得借合同约定把电子签名认证服务变相转为安全服务或辅助认证服务；不得把第三方认证服务违规改造为自建项目。</strong></p>
+      <div class="src">来源：中国经济网（2026-10-20 工信部推进会报道 / 2026-10-26 CFCA 解读）、电子银行网（2026-10-20）、周口市公共资源交易中心（2026-10-21，信安CA 公告，10月27日起启用新版"一证四步"受理流程）</div>
+    </div>
+
+    <div class="insight">
+      <h3>对中安云科的直接意义</h3>
+      <ul>
+        <li><strong>内容侧：这是一个现成的热点选题，且我方有天然话语权。</strong>10月30日节点当天/次日发一篇《CA 新规过渡期收官：企业侧要跟着改什么》，讲"证书分级管理"和"合作方书面告知"这两件跟客户切身相关的事，比讲技术概念更容易被转发。</li>
+        <li><strong>商务侧：这是存量客户回访的合理由头。</strong>凡是走我方证书/签章通道的集成商、平台方客户，10月底都应收到一次"合规改造完成情况确认"，顺带排查续费与扩容。新规要求认证机构向全部合作方书面告知——这条落地动作本身就是一次客户触达机会。</li>
+        <li><strong>投标侧：注意"不得变相转为安全服务"这条红线。</strong>过去部分项目靠"安全服务包"绕开 CA 资质要求，新规明确堵死。反过来看，这对持牌机构是利好——<strong>我方可在方案里把"持牌 CA 直接承载法定环节"写成合规优势条款</strong>，形成对非持牌集成商的差异化。</li>
+        <li><strong>培训侧：</strong>《电子认证业务规则规范》培训视频口播稿的"新规要点"章节，可直接采用工信部推进会四条要求 + 新规三大导向作为骨架，比自行归纳更权威、更不易出错。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 一、密码安全 ===== -->
+  <section>
+    <h2 class="sec">一、密码安全方向 <span class="cnt">后量子成为主战场 · 格尔抢到"官方严选"位置</span></h2>
+
+    <div class="co prio">
+      <div class="co-head">
+        <span class="co-name">格尔软件</span>
+        <span class="co-full">格尔软件股份有限公司（沪主板 603232）</span>
+        <span class="badge hot">本期最关键</span>
+        <span class="badge new">官方严选唯一入选</span>
+      </div>
+      <div class="co-body">
+        <p><strong>抗量子密码方案入选安全419《甲方安全建设精品采购指南(2026)》年度12大精品案例，是量子安全领域唯一获重点推荐的厂商。</strong>该白皮书从近 <strong>300 份</strong>方案中经"广泛征集—入围评审—深度调研"三轮筛选，最终仅 12 个案例结集，<strong>入选率不足 5%</strong>，评审重点核实案例真实性、量化落地成效，要求方案历经国家级攻防演习、监管检查与大规模生产环境运行检验。这意味着格尔在"甲方采购决策参考"这个环节拿到了一个很难被替代的位置。</p>
+        <p><strong>方案的技术骨架值得逐条拆解（我方对外表述需要逐项对齐）：</strong>以"全量子安全"为总定位，技术底座为<strong>下一代公钥基础设施（NGPKI）</strong>；QKD 与 PQC 双线并行，核心理念是"<strong>融合演进</strong>"而非"颠覆替换"；深度整合 <strong>AIGIS-SIG/ENC、CTRU/CNTR、LMS-SM3/HSS-SM3</strong> 等国产后量子算法，同时兼容 <strong>ML-KEM、ML-DSA</strong> 等国际 FIPS 系列，形成"国产+国际"双栈；通过<strong>单证书内嵌双公钥</strong>机制实现传统密码与抗量子密码并行验证，用户无需颠覆性改造即可平滑过渡。</p>
+        <p><strong>已拿到的验证标签：</strong>方案已完成全线密码产品抗量子升级；<strong>安全认证网关成为首家通过中国信通院抗量子技术验证的网络安全厂商</strong>。这两个标签在投标评分表里通常直接对应"技术创新性"分值。</p>
+        <p><strong>AI 安全侧同步推进（10月12日、10月15日上证 e 互动披露）：</strong>2026年上半年陆续发布<strong>AI 大模型安全保险箱、AI 大模型应用安全护栏、智能体身份管理平台</strong>，均通过中国信通院安全能力测试，"AI 大模型安全保险箱"获 2026 年上交会"镇馆之宝"；AI 大模型应用安全护栏通过信通院大模型安全围栏能力评估并获<strong>优秀级</strong>证书。公司口径明确：AI 安全相关业务收入<strong>占比仍较小</strong>，但"已到落地阶段"。</p>
+        <div class="src">来源：同花顺投顾平台（2026-10 安全419 严选解读）、搜狐/安全419 白皮书（2026-10）、企查查收录上证 e 互动问答（2026-10-12 / 10-15）</div>
+      </div>
+    </div>
+
+    <div class="co prio">
+      <div class="co-head">
+        <span class="co-name">信安世纪（ST信安）</span>
+        <span class="co-full">北京信安世纪科技股份有限公司（科创板 688201）</span>
+        <span class="badge hot">PQC 时间表首次官方口径</span>
+        <span class="badge">金融连续中标</span>
+      </div>
+      <div class="co-body">
+        <p><strong>10月13日在上证 e 互动披露了国内 PQC 进展的官方口径，这是本期最有情报价值的一条：</strong>"目前国内 PQC 算法还在征集过程中，<strong>2026年9月，商用密码标准研究院（ICCS）公布了进入第一轮评估的 84 个候选公钥密码算法名单，预计于 2027年6月完成第一轮评估。</strong>"——同时提到公司在卫星互联网领域深度参与《北斗短报文密码技术应用规范》制定，已完成针对卫星互联网的密钥管理系统改造，实现星地通信密钥全生命周期安全管控，<strong>技术已具备落地应用能力</strong>。</p>
+        <p><strong>金融侧连续落地。</strong>10月18日中标<strong>网联清算 2026年信安世纪 SSL 设备原厂维保项目</strong>（89.99万元，44台设备12个月维保）；10月20日公示中标<strong>恒丰银行 2026年数据中心 SSL 设备购置项目</strong>；10月21日中标<strong>北京银行 2026年北京地区和西安灾备中心 SSL 设备采购项目（二次）</strong>；10月22日再获<strong>河南农商行 2026年信创治理项目标段3</strong>单一来源采购（签名验签服务器 NetSign-7500C-DA，信创环境）。10月25日新增<strong>内蒙古农商行数据中心互联网出口项目（负载均衡）</strong>中标候选。</p>
+        <p><strong>观察点：</strong>其 SSL 设备在银行数据中心近乎"标配"，且已进入"原厂维保"续费阶段——说明存量装机量极大。我方如果要进银行 SSL/签名验签场景，面对的不是产品竞争而是<strong>存量替换成本</strong>问题。</p>
+        <div class="src">来源：雪球收录上证 e 互动（2026-10-13）、证券之星（2026-10-20）、恒丰银行采购平台（2026-10-20）、企查查中标动态（2026-10-21/22/25）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">三未信安</span>
+        <span class="co-full">三未信安科技股份有限公司（科创板 688489）</span>
+        <span class="badge">中标延续</span>
+        <span class="badge hot">后量子专利两连发</span>
+      </div>
+      <div class="co-body">
+        <p><strong>延续上半月的后量子中标势头，10月下旬再落一单。</strong>10月23日新增中标<strong>华能云南滇东能源 1~4号机组 DCS 系统及 NCS 系统商用密码应用安全建设设备采购</strong>（候选人公示）——这是发电侧工控系统密改项目，值得注意：<strong>能源工控的密改正在从"办公网"向"DCS/NCS 生产控制网"下沉</strong>，这是密码厂商竞争尚不充分的高价值场景。</p>
+        <p><strong>专利布局继续围绕"后量子 + AI 资产"两条线：</strong>10月16日授权发明专利"<strong>面向 AI 智能体的抗量子 MPC 数字资产托管方法及系统</strong>"；同日公开发明专利"一种基于拓扑发现与策略优化的后量子迁移率闭环检测方法及系统"。后者是"迁移率检测"，说明其已经在做<strong>客户密码资产清点与迁移进度度量</strong>的产品化，这恰好对应后量子迁移的第一步（密码清单/CBOM）。</p>
+        <p>10月19日参与投标湖南大唐先一科技密码设备询比采购。</p>
+        <div class="src">来源：企查查中标/专利动态（2026-10-19 / 10-23）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">吉大正元</span>
+        <span class="co-full">吉大正元信息技术股份有限公司（深主板 003029）</span>
+        <span class="badge warn">四连板 · 估值偏离</span>
+        <span class="badge">新业务收入占比极低</span>
+      </div>
+      <div class="co-body">
+        <p><strong>股价连续四日涨停，公司紧急公告降温。</strong>10月15日、16日、19日、20日连续四个交易日涨停收盘，收盘价涨幅偏离值累计达 <strong>44.24%</strong>，累计换手率 57.72%。10月20日晚公司发布股票交易异常波动公告，就市场热议的 AI 安全、抗量子密码、低空经济及卫星互联网安全逐一回应。</p>
+        <p><strong>公司明确承认：上述领域"均处于技术投入和初步参与阶段，相关业务收入占比较低，尚未形成规模化收入"，能否规模化落地存在重大不确定性。</strong>同时提示三项风险：二级市场交易风险（10月16日换手率 21.01%、10月20日 24.16%）、估值风险（最新静态市盈率为负值，同行业 62.03 倍）、经营业绩风险（2026年上半年营收 1.43 亿元，同比下降 19.41%；归母净利润 -3510.28 万元，处于亏损）。三季报将于 <strong>10月29日</strong>披露。</p>
+        <p><strong>业务侧的实际进展（有据可查的部分）：</strong>10月11—12日承办<strong>第23届中国信息和通信安全学术会议（CCICS 2026）暨产业创新大会</strong>，会议围绕人工智能安全、量子计算与通信安全、后量子密码等议题，期间发布面向<strong>数据治理与终端安全</strong>场景的两款新产品；低空经济赛道参与制定"星-机-地"协同安全解决方案，配载其安全组件的试验卫星已于 2026年4月成功发射。</p>
+        <div class="src">来源：证券时报（2026-10-20 19:15 / 2026-10-21）、财闻网（2026-10-20）、网易新闻（2026-10-20）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">天融信</span>
+        <span class="co-full">天融信科技集团（深主板 002212）</span>
+        <span class="badge hot">AI 安全密集落地</span>
+        <span class="badge">政务 AI 一体化</span>
+      </div>
+      <div class="co-body">
+        <p><strong>一周内连发两个 AI 安全方案，并中标政务外网标杆项目。</strong>①发布<strong>金融业智能体安全解决方案</strong>：构建"智算云平台算力底座 + 全生命周期安全防线 + 智能体安全运营中枢"架构，以大模型安全网关为合规基础、智能体安全管理与评估中心为决策中心，联动大模型数据安全监测与 API 安全审计系统；三道关为评估准入（红队模拟提示注入、越权调用做穿透测试）、运行防护（网关代理模式串接，支持文本/图片/音频/视频多模态检测）、持续运营（态势大屏 + 天问大模型，资产编目、策略编排、合规报告一键生成）。②发布<strong>政务 AI 一体化安全方案</strong>：数据安全监测与防泄漏提供语料扫描、模型检测、敏感识别、攻击监测、<strong>API/MCP 审计</strong>五位一体能力；终端防泄漏提供清点、通道、内容、语义、替代管控五级检测，覆盖剪贴板、文件上传、截屏、打印、外设、网盘与 IM 等外发通道，本地阻断秒级完成。</p>
+        <p><strong>标杆项目：</strong>中标 2026年某市电子政务外网升级改造项目，提供智算云平台 + 大数据安全分析平台 + 天问大模型系统一体化方案，实现海量安全告警降噪。此前 AI 安全防护方案已在广东疾控交付，并接连中标某省财政信息中心数据安全防护设备、中原环保大模型安全建设、常州经开区 AI 一体化平台、中国铁塔江苏分公司等项目。</p>
+        <p><strong>值得注意的合规依据：</strong>方案明确落实 <strong>T/BFIA 070-2026《智能体技术金融应用安全要求》</strong>，监管背景为金融监管总局 6月《关于银行业保险业人工智能安全开发应用的指导意见》（金发〔2026〕8号）。<strong>这是"智能体安全"第一次有了明确的标准编号可作为投标依据</strong>，我方应尽快把该标准摸清。</p>
+        <div class="src">来源：天融信官网（2026-10，newsx/6945、6946）、智慧城市网行业日报（2026-10-21）、中国商报网（2026-10）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">海泰方圆 · 电科网安</span>
+        <span class="co-full">密码厂商在学术与政策场合的发声</span>
+        <span class="badge">政策场 · 学术场</span>
+      </div>
+      <div class="co-body">
+        <p><strong>海泰方圆：</strong>总经理姜海舟出席<strong>中国抗量子密码战略与政策法律工作组 2026年度会议暨《密码法》颁布七周年研讨会</strong>圆桌论坛，与中电信量子集团/中国电信量子研究院 PQC 研究所、蚂蚁集团 Crypto &amp; Privacy Lab 同台。会议披露的关键判断：<strong>全球抗量子密码专利已进入快速增长期，海外主体的布局重心正由算法层转向硬件实现、协议适配等工程化落地环节，标准落地阶段的专利许可风险或将集中显现；国内优势在国产算法实现与场景落地，但基础原创算法专利偏少、海外布局不足，高性能实现与防护类专利差距较大。</strong>会上还介绍了 2026年度"金密杯"（已连续举办三届，紧跟抗量子计算密码技术前沿），工作组拟于 12月初在北京举办第十六届信息安全法律大会密码分论坛。</p>
+        <p><strong>电科网安：</strong>在第 41 次全国计算机安全学术交流会上，副总经理谢宇作《人工智能时代密码应用的挑战与机遇》主题分享；公司获授"突出贡献单位"。同场天融信助理总裁张博作《智能体时代的网络安全体系构建》、绿盟副总裁陈珂作《从"自动化"到"自主化"——大模型驱动渗透测试与漏洞挖掘的范式革命》、奇安信副总裁韩永刚作《人工智能时代的网络安全能力体系思考》。</p>
+        <p><strong>关键词：大会新设"密码应用与创新工作组"并正式授牌成立。</strong>这通常意味着后续标准、课题、试点会从该工作组产出，是值得跟踪的组织信号。</p>
+        <div class="src">来源：西安交通大学苏州研究院（抗量子密码工作组年会）、CCF 计算机安全专委会 / 安全内参（第 41 次全国计算机安全学术交流会，海口）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 二、零信任 ===== -->
+  <section>
+    <h2 class="sec">二、网络安全 · 零信任方向 <span class="cnt">从"零信任架构"叙事转向"智能体安全"叙事</span></h2>
+
+    <div class="co prio">
+      <div class="co-head">
+        <span class="co-name">绿盟科技</span>
+        <span class="co-full">绿盟科技集团股份有限公司（创业板 300369）</span>
+        <span class="badge hot">智慧安全 4.0</span>
+        <span class="badge new">上海研究院成立</span>
+      </div>
+      <div class="co-body">
+        <p><strong>10月21日，2026 TechWorld 智慧安全大会在北京召开，主题"驭智·HARNESS——以智慧安全重构攻防新秩序"，会上正式发布智慧安全 4.0 技术理念，并揭牌成立绿盟科技上海研究院。</strong></p>
+        <p><strong>智慧安全 4.0 的三层结构：</strong>①<strong>智能原生底座</strong>——把 AI 作为安全架构的基础能力，把可信安全内嵌为 AI 系统的固有要求；②<strong>持续进化</strong>——让大模型与智能体在对抗中迭代学习；③<strong>自主运营</strong>——依托 AI 实现人机协同，搭建 7×24 小时主动防御的自主安全运营体系。</p>
+        <p><strong>产品侧的"双引擎"划分值得借鉴：</strong>一是"<strong>AI 赋能安全</strong>"，以自研安全垂域大模型"<strong>风云卫</strong>"为基础，把 AI 融入威胁发现、分析、研判、处置全流程；二是"<strong>AI 自身安全</strong>"，通过"<strong>清风卫</strong>"系列构建覆盖事前风险评估、事中实时防护、事后全流程审计的 AI 原生纵深防御体系，为大模型与智能体提供全生命周期防护。这套"赋能 + 自保"的二分法，已经成为头部厂商对外表述的通用框架。</p>
+        <p><strong>行业判断（可引用的观点）：</strong>国家数字交换系统工程技术研究中心主任邬江兴提出，AI 驱动的智能自主攻击正在超越人类专家能力边界，漏洞挖掘、攻击策略全面智能化重构，主张以"构造的科学"破局，推动安全模式从"被动防御"向"构造免疫"升级。绿盟董事长胡忠华表示，智能体逐步具备自主规划、调用工具、执行任务的能力，既能提升检测响应效率，也可能被用于实施更复杂的攻击。</p>
+        <div class="src">来源：京报网（2026-10-21）、中国网科技/今日头条（2026-10-22）、腾讯新闻（2026-10-22）、东方财富股吧（上证报，2026-10-22）</div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <h3>零信任方向的本期判断</h3>
+      <ul>
+        <li><strong>"零信任"这个词在本周期的厂商叙事里出现频率明显下降，"智能体安全/身份治理"接棒。</strong>绿盟、天融信、格尔、芯盾近期的主推内容里，零信任更多作为能力组件出现（SDP、动态授权），而非独立售卖的概念。这与我方内容选题方向的调整是一致的——<strong>继续单讲"零信任"已经不带流量，改讲"AI 要进业务，凭什么是它、凭什么到这个数据"，反而有话题度。</strong></li>
+        <li><strong>注意"AI 自身安全 + AI 赋能安全"这个二分框架已被头部厂商占位。</strong>我方如果要进这个赛道，宜从自己最有优势的点切——<strong>密码是 AI 可信运行的基础支撑</strong>（格尔的表述也是这个逻辑），而不是去和绿盟比大模型安全护栏。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 三、身份安全 ===== -->
+  <section>
+    <h2 class="sec">三、身份安全方向 <span class="cnt">身份安全的对象从"人"扩展到"Agent"</span></h2>
+
+    <div class="co prio">
+      <div class="co-head">
+        <span class="co-name">芯盾时代</span>
+        <span class="co-full">北京芯盾时代科技有限公司</span>
+        <span class="badge hot">Agentic AI 指南代表性厂商</span>
+      </div>
+      <div class="co-body">
+        <p><strong>入选安全牛《自主智能体 Agentic AI 风险治理与安全应用指南》，被评为 Agent 安全代表性厂商。</strong>指南把<strong>身份认证与权限治理列为六大核心安全能力之首</strong>，给出两个核心理由，判断很锋利：</p>
+        <p>① <strong>Agent 权限会被放大</strong>——实际能力范围可能超过单一用户或传统应用；② <strong>"授权合法 ≠ 行为合法"</strong>——攻击者可能并不具备数据权限，却能操纵 Agent 以合法身份完成数据访问和外发。</p>
+        <p><strong>产品做法：</strong>芯盾 AIAM 把 Agent 分为<strong>企业助手 Agent、个人助手 Agent、自主 Agent</strong> 三类差异化管理，通过<strong>令牌交换机制</strong>控制"用户 → Agent → MCP、A2A 链式访问"，完整记录"哪个用户通过哪个 Agent 访问哪个 MCP 的哪些资源"，支撑存证、溯源与归因。</p>
+        <p><strong>这个"三类 Agent 分法 + 令牌交换 + 全链存证"的模型，是目前看到最接近可落地产品形态的智能体身份治理方案。</strong>对我方的意义：如果要在统一认证/IAM 产品线上加 AI 场景能力，这套模型可以直接作为需求清单参考。</p>
+        <div class="src">来源：智慧城市网行业企业动态日报（2026-10-21）、安全牛《自主智能体 Agentic AI 风险治理与安全应用指南》</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">竹云科技</span>
+        <span class="co-full">深圳竹云科技有限公司</span>
+        <span class="badge">IAM 赛道格局</span>
+      </div>
+      <div class="co-body">
+        <p>本期竹云无重大产品发布，但在多个第三方选型盘点中持续出现在 IAM 第一梯队：产品线为<strong>竹云 IDaaS 身份云平台 + 竹云 IAM 企业级身份管理平台</strong>，覆盖统一身份认证、单点登录、权限管理、零信任安全；对外口径为已服务 500 家行业客户，产品通过<strong>国家密码管理局商用密码产品认证、公安部等保三级认证</strong>，客户包括中国银行、平安集团、国家电网、中国石油；支持 SaaS 与私有化双交付。</p>
+        <p><strong>观察点：</strong>这类第三方"避坑指南/实力参考"类内容大量出现在 10月下旬，说明 IAM 赛道的采购旺季正在启动。<strong>该类内容的排名并不完全客观（多为厂商付费收录），但会实际影响部分甲方的前期短名单</strong>——我方在身份安全方向的品牌曝光需要跟上，否则会在信息入口处被动缺席。</p>
+        <div class="src">来源：八方资源网选型盘点（2026-10，多篇）</div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <h3>身份安全方向的本期判断</h3>
+      <ul>
+        <li><strong>赛道的产品定义正在迁移：从"IAM/统一认证"→"人与非人身份统一治理（NHI）"。</strong>芯盾、格尔（智能体身份管理平台）、Microsoft（Project Perception，见上半月报告）三家在 30 天内各自动作，形成共识。中安云科的统一认证能力在这个新叙事里有天然落点——<strong>证书是非人身份最成熟的可信载体</strong>，这是我方相对于纯软件 IAM 厂商的差异化论据。</li>
+        <li><strong>可落地的选题：</strong>《当企业里有 500 个 AI Agent，谁给它们发"工牌"？》——从这个角度切入数字证书在非人身份管理里的作用，概念新、讨论度高，且直接连到我方产品。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 四、数据安全 ===== -->
+  <section>
+    <h2 class="sec">四、数据安全方向 <span class="cnt">AI 越权成为新的合规风险点</span></h2>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">美创科技</span>
+        <span class="co-full">杭州美创科技股份有限公司</span>
+        <span class="badge hot">AI 越权场景</span>
+      </div>
+      <div class="co-body">
+        <p><strong>10月21日发布《AI 数据访问安全 | 如何控制 AI 访问权限，防止越权》场景内容，切入了一个非常具体的痛点：AI 越权。</strong>文中案例：某企业"智能问答"AI 助手本用于员工查考勤、查报销，但审计发现其数据库访问记录里出现了<strong>薪酬表、绩效表</strong>的查询记录——原因是该 AI 助手与另一个内部 Agent <strong>共用同一个数据库账号</strong>，通过共享账号"继承"了不该有的访问权限。</p>
+        <p><strong>合规依据引用得很准：</strong>《数据安全法》要求建立全流程数据安全管理制度并采取必要技术措施；《网络数据安全管理条例》第九条明确列出访问控制和安全认证等措施；《个人信息保护法》要求个人信息处理遵循最小范围原则并防止未经授权访问。<strong>"相关义务不会因操作者从人变成 AI 而消失"</strong>——这句话是极好的传播点。</p>
+        <p><strong>产品解法：</strong>美创数据库防水坝为每个 AI Agent 建立<strong>独立访问身份</strong>，关联责任人、访问来源和允许使用的数据库账号；AI 从代理地址接入，由<strong>托管账号承接真实凭据</strong>，真实密码不向 AI 暴露；一 AI 一账号、独立身份、独立授权、行为可追溯；让 AI 的权限跟着任务走，而不是照搬账号权限。</p>
+        <div class="src">来源：网易号 / 杭州美创科技（2026-10-21）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">明朝万达</span>
+        <span class="co-full">北京明朝万达科技股份有限公司</span>
+        <span class="badge">政府认证</span>
+      </div>
+      <div class="co-body">
+        <p>自主研发的"<strong>数据安全综合管理与审计系统</strong>"通过评审，获北京市科委、中关村管委会等六部门联合颁发的《北京市新技术新产品（服务）证书》，这是其<strong>第五次</strong>获此认证。该系统融合人工智能、大数据分析、行为建模，覆盖数据资产识别、分类分级、管控与风险审计，在 DLP、数据操作审计、异常行为分析方面具备技术优势。</p>
+        <p><strong>注意：</strong>本期该条为厂商自有渠道发布，未检索到更多独立信源交叉验证，作为背景信息记录即可，不宜作为竞争结论依据。</p>
+        <div class="src">来源：厂商渠道稿（2026-10，单一信源，待交叉验证）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 五、政策与标准 ===== -->
+  <section>
+    <h2 class="sec">五、政策与标准动态 <span class="cnt">本期 4 项 · 含"十五五"规划这一顶层文件</span></h2>
+
+    <div class="pol">
+      <div class="ph">① 《国家信息化"十五五"规划》正式印发 <span class="badge warn">顶层文件</span></div>
+      <div class="pd">10月23日前后，<strong>中央网络安全和信息化委员会印发《国家信息化"十五五"规划》</strong>，对体系化深层次推进"十五五"时期国家信息化发展作出部署，是指导各地区各部门信息化工作的行动指南。总体布局为"<strong>建设三个体系、提升五个水平、夯实两个支撑</strong>"，部署 10 个方面具体任务，设置 7 个专栏。<br><br><strong>与密码/安全直接相关的表述：</strong>到 2030 年"网络安全保障坚实有力，<strong>法规标准体系更加完善</strong>"；任务九"夯实安全保障支撑"、任务十"<strong>夯实法规标准支撑</strong>"单列为两个方面；专栏中包括"数据跨境流动便利化提升行动"。基础设施方面明确"新一代通信网全面建成，适时启动 6G 商用，国家区块链网络基本建成，智能互联网加快布局发展"。<br><br><strong>对我方的意义：</strong>这是"十五五"期间所有网信项目的上位依据。做内容时引用"夯实安全保障支撑 + 夯实法规标准支撑"这两句，比引用具体产品政策更有分量；对政府客户，尤其要关注"国家区块链网络"和"智能互联网"两个提法——<strong>区块链与智能互联网都是强身份/强密码依赖场景</strong>。</div>
+      <div class="meta">来源：中国网信网（cac.gov.cn，2026-10-23）、光明日报（2026-10-24，04版）</div>
+    </div>
+
+    <div class="pol">
+      <div class="ph">② 第41次全国计算机安全学术交流会（海口）召开，新设"密码应用与创新工作组"</div>
+      <div class="pd">大会紧扣"十五五"网络安全发展目标任务，围绕人工智能安全、关键信息基础设施防护、密码技术创新、云安全等方向研讨。<strong>无人机系统安全工作组、密码应用与创新工作组作为"新工作组"正式授牌成立</strong>——工作组通常产出后续标准、课题与试点，是需要持续跟踪的组织信号。电科网安、天融信、绿盟、奇安信、启明星辰、深信服、山石网科、海光信息获授"突出贡献单位"。</div>
+      <div class="meta">来源：CCF 计算机安全专委会 / 安全内参（2026-10）</div>
+    </div>
+
+    <div class="pol">
+      <div class="ph">③ 中国抗量子密码战略与政策法律工作组 2026年度会议暨《密码法》颁布七周年研讨会</div>
+      <div class="pd">核心信息有三条：<strong>一是</strong>全球抗量子密码专利进入快速增长期，海外主体布局重心正由算法层转向<strong>硬件实现、协议适配</strong>等工程化落地环节，标准落地阶段专利许可风险或将集中显现；<strong>二是</strong>国内优势在国产算法实现与场景落地，但基础原创算法专利偏少、海外布局不足，高性能实现与防护类专利差距较大；<strong>三是</strong>会上介绍了 2026年度"金密杯"（已连续三届，紧跟抗量子计算密码技术前沿，服务国家下一代算法征集）。华为、中电信量子、蚂蚁集团、重庆大学等参与报告。工作组拟于 12月初在北京举办第十六届信息安全法律大会密码分论坛。</div>
+      <div class="meta">来源：西安交通大学苏州研究院 / 密码法治实践创新基地（2026-10）</div>
+    </div>
+
+    <div class="pol">
+      <div class="ph">④ 电子认证业务规则规范整改过渡期 10月30日到期</div>
+      <div class="pd">详见本报告置顶专题。要点回顾：工信部信发司 10月14日召开推进会，全国 58 家 CA 机构参会；过渡期结束须公示新版 CPS 并严格执行；专项检查核验；逾期按《电子签名法》《电子认证服务管理办法》处理。已在实操层面看到落地——<strong>河南省信息化集团（信安CA）公告自 10月27日起，公共资源 CA 证书业务启用新版办理材料及标准化"一证四步"受理流程，旧版材料同步停止使用</strong>；明确不额外收费、存量未到期证书可继续使用、不影响已在进行中的交易项目。</div>
+      <div class="meta">来源：中国经济网、电子银行网（2026-10-20）、周口市公共资源交易中心（2026-10-21）</div>
+    </div>
+  </section>
+
+  <!-- ===== 六、国际动态 ===== -->
+  <section>
+    <h2 class="sec">六、国际动态 <span class="cnt">后量子从"战略"进入"合规倒计时"</span></h2>
+
+    <div class="co prio">
+      <div class="co-head">
+        <span class="co-name">Thales</span>
+        <span class="co-full">泰雷兹集团（Euronext Paris: HO）</span>
+        <span class="badge hot">Luna 8 已确认贡献增长</span>
+      </div>
+      <div class="co-body">
+        <p><strong>10月22日发布截至 9月30日的订单与销售额。三季度销售额 54.73 亿欧元，有机增长 8.7%。</strong>其中 Cyber &amp; Digital 板块前九月销售额 27.42 亿欧元（恒定汇率 +0.2%，报表 -1.6%）；<strong>Cyber 业务前九月 +2.5%，三季度有机增长 +4.3%，确认重回增长</strong>。</p>
+        <p><strong>关键表述（原文）：</strong>"网络安全产品市场依然格外活跃，泰雷兹持续保持创新势头，特别是<strong>于第三季度推出了面向后量子密码的下一代硬件安全模块 Luna 8</strong>，这强化了中期增长前景。"——意味着 <strong>Luna 8 已被列入集团财报的增长驱动因素</strong>，不是概念发布。</p>
+        <p><strong>另一条产品线：Mistral IP9100 超高速加密平台。</strong>面向国防、交通、水务、能源等关键基础设施敏感网络防护，同时适配数据中心互联等高吞吐场景；支持 <strong>100 Gbps 全双工</strong>加密传输，模块化架构可平滑升级至 200 Gbps；<strong>集成抗量子加密算法</strong>；满足法国、欧盟及北约多级保密资质要求；<strong>预计 2027年第一季度开始交付</strong>。</p>
+        <div class="src">来源：Thales 官网新闻稿（2026-10-22）、WebDisclosure 财报全文、CN-SEC 网安周报（10.12—10.18）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">DigiCert</span>
+        <span class="co-full">DigiCert, Inc.</span>
+        <span class="badge new">业界首家 FedRAMP 20x Class C</span>
+      </div>
+      <div class="co-body">
+        <p><strong>10月20日宣布进入 FedRAMP Marketplace（初始实施状态），成为本行业首家按现代化 FedRAMP 20x 框架申请认证的公司，目标为 Class C 级。</strong>Class C 是 FedRAMP 20x 当前可获得的<strong>最严格认证级别</strong>，面向处理敏感联邦信息（含受控非密信息 CUI）的云服务。</p>
+        <p>本次列入范围覆盖 DigiCert ONE 平台三项服务：<strong>Trust Lifecycle Manager</strong>（发现并自动化公有/私有证书生命周期，降低证书相关中断风险）、<strong>Software Trust Manager</strong>（集中代码签名、密钥管理、策略控制、发布可见性）、<strong>Private CA</strong>（自建私有 CA 保护内部用户、设备、应用与工作负载）。公司定位为"AI-powered DigiCert ONE 平台，统一 PKI、DNS 与证书生命周期管理，保障基础设施、软件、设备、消息以及 <strong>AI 内容、智能体与模型</strong>"。</p>
+        <p><strong>观察点：</strong>国际 CA 正在把竞争维度从"证书签发"抬到"<strong>云服务合规资质 + 智能体身份</strong>"。FedRAMP 这类资质在涉外/云场景招标中会成为硬门槛，国内 CA 短期内难以对标，但在国内政企市场我方有本地合规优势可用。</p>
+        <div class="src">来源：DigiCert 官网新闻（2026-10-20）</div>
+      </div>
+    </div>
+
+    <div class="co prio">
+      <div class="co-head">
+        <span class="co-name">全球 PQC 监管节点</span>
+        <span class="co-full">美 / 欧 / 新 / 英 同期动作</span>
+        <span class="badge warn">10月密集到期</span>
+      </div>
+      <div class="co-body">
+        <p><strong>美国：OMB M-26-15 迁移计划提交期限 10月22日到期。</strong>该备忘录 2026年6月24日发布，给出 120 天合规窗口，要求行政部门与机构（不含国家安全系统）向 OMB 与国家网络总监办公室提交<strong>全面的 PQC 迁移计划</strong>，须覆盖：密码资产清点、基于风险的优先级排序、分阶段迁移里程碑、TLS 1.3 部署时间表、<strong>密码敏捷性架构</strong>、第三方协调、资源估算。同期 GAO 于 10月6日发布 GAO-27-108740（10月14日修订重发），发现受审查的 <strong>24 家 CFO Act 机构中没有一家完整落实三项准备实践</strong>（建立密码清点流程、确定迁移所需资金、规划机构内 PQC 测试）。</p>
+        <p><strong>欧盟/德国：</strong>德国联邦内政部（BMI）、联邦数字化与国家现代化部（BMDS）与联邦信息安全办公室（BSI）于 <strong>10月12日联合发布《欧盟向后量子密码迁移路线图的国家实施》指南</strong>，确立刚性时间表：<strong>2026年底前完成迁移规划；高风险系统 2030年底前全面量子安全；中等风险 2035年底完成；低风险尽可能 2035年底完成。</strong>BSI 评估量子计算机很可能在<strong>最多 15 年内（2040年或更早）</strong>成为现实，且量子纠错基本假设已于 2024 年得到验证，时间表可能进一步缩短。方法论为"清点、优先级排序、实施"三步曲，建议采用<strong>混合方案</strong>（经典 + PQC）。</p>
+        <p><strong>新加坡：</strong>网络安全局 10月14日重申量子安全迁移时间表——<strong>关键信息基础设施所有者 2027年前制定迁移计划，2031年前完成 CII 迁移</strong>；其他机构建议 2035年前完成。10月20日 MAS 与英国 HM Treasury 第 11 次英新金融对话，双方就"<strong>金融机构向量子安全技术过渡的监管预期</strong>"交换意见，MAS 分享 QKD 沙盒经验，英方分享 NCSC PQC 迁移指南。</p>
+        <p><strong>英国：</strong>NCSC 于 10月15日更新 TLS 指南，纳入 PQC 配置。</p>
+        <p><strong>标准侧：</strong>IETF PQUIP 工作组 10月20日发布 draft-ietf-pquip-pqc-hsm-constrained-09《Adapting Constrained Devices for Post-Quantum Cryptography》，覆盖基于种子的密钥生成、低资源环境下的 ML-DSA 优化、受限条件下的密钥轮换、PQC 固件认证，作者来自 Nokia、Citrix、英国 NCSC、PQShield；原定 10月22日 IESG telechat 推迟至 11月5日。ETSI 第 20 届安全会议（10月19—22日，法国 Sophia Antipolis）设"Cryptography &amp; Quantum Readiness"专场（10月21日），Google 分享生产环境 PQC 部署经验、DigiCert 探讨 Merkle 树证书作为量子安全 PKI 方案、Sectigo 讨论 PQC 与 47 天证书生命周期、NCSC UK 与 EigenQ 讲后量子 PKI 迁移、华为介绍 IPsec/IKEv2 的 PQC 迁移 IETF 进展。</p>
+        <p><strong>应用侧：</strong>W3C WebAuthn Level 3 已于 2026年8月成为 Recommendation 且算法无关（RP 只需列出接受的算法）；RFC 9964 已注册 ML-DSA-44/65/87 的 COSE 标识符。<strong>当前可行的动作很便宜：检查服务端库是否硬编码了 ES256/RS256。</strong>仍开放的问题：FIDO 的 ML-DSA 一致性测试用例仍是提案、复合（混合）证书签名仍是 IETF 草案。</p>
+        <div class="src">来源：SITG Consulting《PQC Governance Digest》（截点 2026-10-23）、BSI/德国联邦政府指南（2026-10-12，寰球密码简报编译）、Trust Panda Europe、Ciphers Security（标准核对日 2026-10-09）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 七、后量子时间表 ===== -->
+  <section>
+    <h2 class="sec">七、后量子迁移时间表对照 <span class="cnt">本期最大情报收获 · 建议打印贴墙</span></h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:16%">时间节点</th>
+          <th style="width:26%">事项</th>
+          <th style="width:14%">主体</th>
+          <th style="width:44%">对中安云科的含义</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="zayk">
+          <td>2026年9月（已发生）</td>
+          <td>商用密码标准研究院（ICCS）公布进入第一轮评估的 <span class="hi">84 个候选公钥密码算法</span>名单</td>
+          <td>ICCS</td>
+          <td>国密 PQC 算法征集已进入实质阶段，我方可提前跟踪名单中是否有自主/合作算法</td>
+        </tr>
+        <tr>
+          <td>2026年12月31日</td>
+          <td>完成迁移规划、确定责任分工、制定具约束力实施计划（德国/欧盟口径）</td>
+          <td>德国联邦/州/关键基础设施</td>
+          <td>国际客户与出海场景的合规节奏参考</td>
+        </tr>
+        <tr class="zayk">
+          <td><span class="hi">2027年6月</span></td>
+          <td>ICCS 完成候选算法<span class="hi">第一轮评估</span></td>
+          <td>ICCS</td>
+          <td><strong>国密 PQC 产品化的发令枪</strong>。评估结果公布后 12—18 个月内是产品窗口期</td>
+        </tr>
+        <tr class="zayk">
+          <td><span class="hi">2027年底—2028年初</span></td>
+          <td>国密 PQC 国家标准预计发布（格尔/行业口径）</td>
+          <td>国家层面</td>
+          <td>标准发布即意味着可送检、可投标。<strong>现在就要把送测前置准备做起来</strong></td>
+        </tr>
+        <tr>
+          <td>2027年底前</td>
+          <td>央行要求金融机构完成后量子密码<span class="hi">迁移试点</span>（行业口径）</td>
+          <td>人民银行 / 金融机构</td>
+          <td><strong>金融是我方最强客户盘</strong>，试点是必须进的名单</td>
+        </tr>
+        <tr>
+          <td>2030年12月31日</td>
+          <td>高风险系统量子安全；新采购尽可能只考虑具备量子安全（或可升级）的产品</td>
+          <td>德国/欧盟</td>
+          <td>"可升级能力"将成为采购条款，产品架构需支持密码敏捷性</td>
+        </tr>
+        <tr>
+          <td>2031年</td>
+          <td>关键信息基础设施完成 PQC 迁移</td>
+          <td>新加坡 CSA</td>
+          <td>东南亚出海客户的合规节奏</td>
+        </tr>
+        <tr>
+          <td>2035年12月31日</td>
+          <td>中等风险系统完成迁移；NIST IR 8547 草案拟全面禁用 RSA/ECC</td>
+          <td>欧盟 / NIST</td>
+          <td>长期技术路线判断：PKI 体系将在 2035 年前完成代际更替</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tbl-note">注：国内节点（2027年6月一轮评估、2027年底—2028年初国标、央行 2027 试点）来自企业公开披露与行业解读口径，非监管正式发文，作为趋势判断使用；国际节点均有官方文件或权威信源支撑。</div>
+  </section>
+
+  <!-- ===== 八、密评招标 ===== -->
+  <section>
+    <h2 class="sec">八、密评与密改招标风向 <span class="cnt">本期 5 个政府采购样本</span></h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:26%">采购单位</th>
+          <th style="width:30%">项目名称</th>
+          <th style="width:12%">金额</th>
+          <th style="width:20%">中标方</th>
+          <th style="width:12%">公告日</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>陕西省审计厅机关</td>
+          <td>2026年度商用密码应用安全测评服务采购项目</td>
+          <td>30.40 万元</td>
+          <td>颢安检测技术（西安）</td>
+          <td>2026-10-23</td>
+        </tr>
+        <tr>
+          <td>榆林市市委机关事务服务中心</td>
+          <td>商用密码应用安全性评估检查服务项目</td>
+          <td>27.55 万元</td>
+          <td>智巡密码（上海）检测</td>
+          <td>2026-10-20</td>
+        </tr>
+        <tr>
+          <td>海口市城市管理局</td>
+          <td>2026年网络安全等级保护测评及商用密码应用安全性评估服务</td>
+          <td>15.28 万元</td>
+          <td>海南正邦信息科技<br><span class="no">（最低价中标，4家申报1家因证件过期被否）</span></td>
+          <td>2026-10-20</td>
+        </tr>
+        <tr>
+          <td>厦门自贸委</td>
+          <td>信息系统商用密码应用测评服务项目</td>
+          <td>8.10 万元</td>
+          <td>航天中认软件测评（北京）</td>
+          <td>2026-10-21</td>
+        </tr>
+        <tr>
+          <td>宁夏商务厅</td>
+          <td>2026年中阿博览会信息化综合服务平台商用密码应用安全性评估</td>
+          <td>3.00 万元</td>
+          <td>智巡密码（上海）检测<br><span class="no">（比选排名：智巡1 / 高维山东2 / 新潮睿石3）</span></td>
+          <td>2026-10-20</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tbl-note">观察：①本周期密评采购集中在<strong>地市级机关与展会/公共服务平台</strong>，单项目金额 3—30 万元，属"小而多"型；②中标方高度集中在<strong>智巡密码、颢安检测、航天中认</strong>等少数测评机构，测评机构的区域覆盖能力决定其接单半径；③海口项目采用"报价最低者中标"且 4 家申报 1 家因身份证件过期被否——<strong>资质文件时效性审查趋严</strong>，我方投标材料同样需注意证照有效期。</div>
+  </section>
+
+  <!-- ===== 九、启示 ===== -->
+  <section>
+    <h2 class="sec">九、对中安云科的启示</h2>
+
+    <div class="insight">
+      <h3>三条行动建议（按紧迫度排序）</h3>
+      <ul>
+        <li><strong>【本周内】借 10月30日节点做一轮合规宣传与客户触达。</strong>新规过渡期收官是天然的传播窗口，且我方作为持牌机构有立场发言。具体动作：①10月30日或31日发一篇公众号长文，讲证书分级管理 + 合作方书面告知 + 企业侧要做的事；②向存量集成商/平台客户发一次"合规改造完成确认"，附新版 CPS 要点，顺带排查续费与扩容机会；③把"持牌 CA 直接承载法定环节、核心职责不委托"写进投标方案合规章节，作为对非持牌集成商的差异化。</li>
+        <li><strong>【本季度内】把后量子从"概念"变成"可投标的表述"。</strong>目前竞品的对外表述已经明显领先：格尔有 NGPKI + 国产/国际双栈 + 单证书内嵌双公钥 + 信通院抗量子技术验证（首家）；三未信安有后量子迁移率检测专利和 AI 智能体抗量子 MPC 资产托管专利；信安世纪有卫星互联网密钥管理改造。我方若继续只有"支持国密算法"，在新一轮招标的创新性评分上会被压。<strong>最小可行的起步动作：①梳理现有产品的密码敏捷性（算法可替换架构）；②对外形成一句清晰的后量子迁移主张；③跟踪 ICCS 84 个候选算法名单。</strong></li>
+        <li><strong>【持续】盯住"智能体身份"这个新增品类。</strong>30天内微软、Okta、ServiceNow、格尔、芯盾、天融信六家在这个方向落子，且已有 <strong>T/BFIA 070-2026《智能体技术金融应用安全要求》</strong>可作为投标依据。我方的切入角度应该是<strong>"证书是非人身份最成熟的可信载体"</strong>——不与软件 IAM 厂商比 Agent 行为分析，而是比身份根信任与全生命周期管理，这是我方强项。</li>
+      </ul>
+    </div>
+
+    <div class="insight">
+      <h3>风险提示</h3>
+      <ul>
+        <li><strong>吉大正元的四连板不代表行业景气，反而要警惕。</strong>公司自己公告承认 AI 安全、抗量子、低空经济"收入占比较低，尚未形成规模化收入"，静态市盈率为负。这类估值炒作会带动整个密码板块的情绪，但不会带来真实订单。三季报 10月29日披露，建议关注其对板块情绪的扰动。</li>
+        <li><strong>信安世纪（ST信安）的激进可能性。</strong>其因研发费用资本化会计处理不当被出具内控否定意见而戴 ST，营收和研发投入与三未接近但盈利状况更好、合同金额同比增长。戴帽状态下更依赖新增合同，<strong>在 SSL/签名验签等其优势场景可能出现价格战</strong>。我方在银行类项目报价前应先摸底其存量装机与维保到期时间。</li>
+        <li><strong>警惕第三方"选型指南"类内容的排名绑架。</strong>10月下旬大量出现付费收录性质的"实力参考/避坑指南"，竹云、芯盾等被反复列入第一梯队。这类内容会影响部分甲方前期短名单，我方在该渠道目前基本缺席。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 十、小编评论 ===== -->
+  <section>
+    <h2 class="sec">十、小编评论</h2>
+    <div class="comment">
+      <p>本期最该被记住的不是哪个厂商发了什么产品，而是<strong>两个日期：10月30日和2027年6月</strong>。</p>
+      <p>10月30日是电子认证合规整改的关门时间。这件事在行业里几乎没有激起水花，但对持牌机构来说是一次真正的洗牌——新规把服务告知、身份核验、意愿确认、协议签署、数据留存五个法定环节全部收回到持牌机构，还顺手堵掉了"变相转安全服务"和"第三方服务改成自建"两条老路。过去靠这些缝隙做业务的集成商，这次是真的没得绕了。<strong>对我们是利好，但前提是客户知道我们合规、知道为什么这对他有好处。</strong>现在离节点只剩四天，该说的话要赶紧说。</p>
+      <p>2027年6月是国密后量子算法第一轮评估完成的时间。这条线索比任何产品发布都重要——它意味着<strong>后量子在中国正式进入倒计时，而从算法评估完成到产品可送检可投标，行业普遍判断只有12到18个月</strong>。格尔软件已经在这个方向上把标签贴满了：NGPKI、国产国际双栈、单证书双公钥、第一家通过信通院抗量子验证、入选安全419年度严选。三未信安把专利铺到了"迁移率检测"这种很实操的位置。我们目前在这条线上的对外表述几乎是空白。</p>
+      <p>还有一条容易被忽略的：<strong>身份安全的对象正在从"人"变成"Agent"</strong>。芯盾那句"授权合法≠行为合法"说得挺准——攻击者不需要有数据权限，只要操纵一个有权限的 Agent 就行。微软、Okta、ServiceNow、格尔、芯盾、天融信，三十天内六家在动。这不是概念，因为已经有 T/BFIA 070-2026 这样的标准编号可以写进投标书了。</p>
+      <p>至于吉大正元的四个涨停，看看就好。公司自己都说新业务"尚未形成规模化收入"，市盈率是负的。<strong>真正在赚钱的单子都在招标公告里，不在K线图上。</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    中安云科 市场部 · 竞品动态监测　|　监测区间 2026年10月20日 — 10月26日　|　出具日期 2026年10月26日<br>
+    本期衔接《2026年10月上半月竞品动态调研报告》（10月5日—10月20日），已剔除重复条目
+  </footer>
+
+</div>
+</body>
+</html>

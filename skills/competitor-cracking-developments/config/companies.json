@@ -1,0 +1,2637 @@
+{
+ "meta": {
+  "source": "data/summary_all.json",
+  "snapshot": "2026-09-07",
+  "unique_companies": 163,
+  "category_rows": 182,
+  "note": "同一企业可属多个方向，categories为方向列表；排序/去重以full全称为准"
+ },
+ "companies": [
+  {
+   "short": "江南天安",
+   "full": "北京江南天安科技有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 20,
+    "ipv6": 13,
+    "gm": 143,
+    "fips": 2,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "安恒信息",
+   "full": "杭州安恒信息技术股份有限公司",
+   "categories": [
+    "密码安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 75,
+    "ipv6": 18,
+    "gm": 6,
+    "fips": 0,
+    "epri": 5
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "海泰方圆",
+   "full": "北京海泰方圆科技股份有限公司",
+   "categories": [
+    "密码安全",
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 11,
+    "ipv6": 3,
+    "gm": 95,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "北京CA",
+   "full": "北京数字认证股份有限公司",
+   "categories": [
+    "密码安全",
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 19,
+    "ipv6": 10,
+    "gm": 117,
+    "fips": 0,
+    "epri": 1
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "渔翁信息",
+   "full": "渔翁信息技术股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 17,
+    "ipv6": 3,
+    "gm": 121,
+    "fips": 0,
+    "epri": 8
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "东进技术",
+   "full": "深圳市东进技术股份有限公司",
+   "categories": [
+    "密码安全",
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 3,
+    "ipv6": 1,
+    "gm": 60,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "数盾科技",
+   "full": "数盾信息科技股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 18,
+    "ipv6": 6,
+    "gm": 76,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "安盟信息",
+   "full": "北京安盟信息技术股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 12,
+    "ipv6": 1,
+    "gm": 13,
+    "fips": 0,
+    "epri": 5
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "信长城",
+   "full": "北京信长城科技发展有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 24,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "吉大正元",
+   "full": "长春吉大正元信息技术股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 25,
+    "ipv6": 9,
+    "gm": 121,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "观源科技",
+   "full": "观源（上海）科技有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 20,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "网御星云",
+   "full": "北京网御星云信息技术有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 113,
+    "ipv6": 10,
+    "gm": 38,
+    "fips": 0,
+    "epri": 20
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "盛邦安全",
+   "full": "远江盛邦安全科技集团股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 9,
+    "ipv6": 0,
+    "gm": 1,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "启明星辰",
+   "full": "启明星辰信息技术集团股份有限公司",
+   "categories": [
+    "密码安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 110,
+    "ipv6": 12,
+    "gm": 32,
+    "fips": 0,
+    "epri": 90
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "新华三",
+   "full": "新华三技术有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 185,
+    "ipv6": 56,
+    "gm": 82,
+    "fips": 0,
+    "epri": 218
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "奥联",
+   "full": "深圳奥联信息安全技术有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 7,
+    "ipv6": 5,
+    "gm": 65,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "格尔软件",
+   "full": "格尔软件股份有限公司",
+   "categories": [
+    "密码安全",
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 17,
+    "ipv6": 12,
+    "gm": 103,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "时代亿信",
+   "full": "北京时代亿信科技股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 2,
+    "ipv6": 0,
+    "gm": 37,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "联通数科",
+   "full": "联通数字科技有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "网证通",
+   "full": "广东省电子商务认证有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 41,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "三未信安",
+   "full": "三未信安科技股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 26,
+    "ipv6": 9,
+    "gm": 177,
+    "fips": 2,
+    "epri": 5
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "兴唐通信",
+   "full": "北京兴唐通信科技有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 17,
+    "ipv6": 0,
+    "gm": 125,
+    "fips": 0,
+    "epri": 79
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "江南信安",
+   "full": "江南信安（北京）科技有限公司",
+   "categories": [
+    "密码安全",
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 4,
+    "ipv6": 0,
+    "gm": 39,
+    "fips": 0,
+    "epri": 6
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "江南科友",
+   "full": "广州江南科友科技股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 9,
+    "ipv6": 4,
+    "gm": 103,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "山东得安",
+   "full": "山东得安信息技术有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 17,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "数安时代",
+   "full": "数安时代科技股份有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 3,
+    "gm": 50,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "信安世纪",
+   "full": "北京信安世纪科技股份有限公司",
+   "categories": [
+    "密码安全",
+    "数据安全",
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 36,
+    "ipv6": 18,
+    "gm": 144,
+    "fips": 0,
+    "epri": 3
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "core"
+  },
+  {
+   "short": "天融信",
+   "full": "北京天融信网络安全技术有限公司",
+   "categories": [
+    "密码安全",
+    "数据安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 157,
+    "ipv6": 36,
+    "gm": 102,
+    "fips": 0,
+    "epri": 29
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Thales",
+   "full": "Thales S.A.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 98,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Entrust",
+   "full": "Entrust Datacard Corporation",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 42,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Utimaco",
+   "full": "Utimaco GmbH",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 26,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Futurex",
+   "full": "Futurex, L.P.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 7,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Keyfactor",
+   "full": "Keyfactor, Inc.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 10,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Fortanix",
+   "full": "Fortanix, Inc.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 4,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Securosys",
+   "full": "Securosys SA",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 3,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Crypto4A",
+   "full": "Crypto4A, Inc.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "PQShield",
+   "full": "PQShield Ltd.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "SandboxAQ",
+   "full": "SandboxAQ, Inc.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "CryptoNext Security",
+   "full": "CryptoNext Security SAS",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "QuintessenceLabs",
+   "full": "QuintessenceLabs Pty Ltd",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Crypto Quantique",
+   "full": "Crypto Quantique Ltd",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "DigiCert",
+   "full": "DigiCert, Inc.",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 8,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "ISARA",
+   "full": "ISARA Corporation",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "IBM",
+   "full": "International Business Machines Corporation",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 100,
+    "epri": 1
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Atos / Evidian",
+   "full": "Atos SE",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 4,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "纽创信安",
+   "full": "深圳市纽创信安科技开发有限公司",
+   "categories": [
+    "密码安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 42,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "360数字安全",
+   "full": "三六零数字安全科技集团有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 43,
+    "ipv6": 8,
+    "gm": 10,
+    "fips": 0,
+    "epri": 1
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "天翼安全",
+   "full": "天翼安全科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 13,
+    "ipv6": 0,
+    "gm": 16,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "美创科技",
+   "full": "杭州美创科技股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 10,
+    "ipv6": 1,
+    "gm": 2,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "东软集团",
+   "full": "东软集团股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 75
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "安华金和",
+   "full": "北京安华金和科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 5,
+    "ipv6": 0,
+    "gm": 3,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "亚鸿世纪",
+   "full": "北京亚鸿世纪科技发展有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "保旺达",
+   "full": "江苏保旺达软件技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 2,
+    "ipv6": 0,
+    "gm": 2,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "迪普科技",
+   "full": "杭州迪普科技股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 49,
+    "ipv6": 14,
+    "gm": 26,
+    "fips": 0,
+    "epri": 118
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "霍因科技",
+   "full": "合肥霍因科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "全知科技",
+   "full": "全知科技（杭州）有限责任公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "启明星辰",
+   "full": "北京启明星辰信息安全技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 109,
+    "ipv6": 12,
+    "gm": 32,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "观安信息",
+   "full": "上海观安信息技术股份有限公司",
+   "categories": [
+    "数据安全",
+    "身份安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 18,
+    "ipv6": 4,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "中信网安",
+   "full": "福建中信网安信息科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 12,
+    "ipv6": 0,
+    "gm": 4,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "云智信安",
+   "full": "郑州云智信安安全技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 4,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "思维世纪",
+   "full": "成都思维世纪科技有限责任公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "安胜网络",
+   "full": "厦门安胜网络科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "昂楷科技",
+   "full": "深圳昂楷科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 9,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "聚中软件",
+   "full": "聚中软件（上海）有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 1,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "上讯信息",
+   "full": "上海上讯信息技术股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 4,
+    "ipv6": 0,
+    "gm": 2,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "威努特",
+   "full": "北京威努特技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 27,
+    "ipv6": 0,
+    "gm": 5,
+    "fips": 0,
+    "epri": 12
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "绿盟科技",
+   "full": "北京神州绿盟科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 91,
+    "ipv6": 25,
+    "gm": 28,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "神州泰岳",
+   "full": "北京神州泰岳软件股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 10,
+    "ipv6": 10,
+    "gm": 2,
+    "fips": 0,
+    "epri": 1
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "奇安信",
+   "full": "奇安信科技集团股份有限公司",
+   "categories": [
+    "数据安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 130,
+    "ipv6": 41,
+    "gm": 89,
+    "fips": 0,
+    "epri": 36
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "安信天行",
+   "full": "北京安信天行科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 12,
+    "ipv6": 2,
+    "gm": 12,
+    "fips": 0,
+    "epri": 2
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "石犀科技",
+   "full": "深圳市石犀科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "天空卫士",
+   "full": "北京天空卫士网络安全技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 2,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "马赫谷科技",
+   "full": "北京马赫谷科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 1,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "蚂蚁密算",
+   "full": "浙江蚂蚁密算科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "原点安全",
+   "full": "北京原点数安科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "鹏信科技",
+   "full": "浙江鹏信信息科技股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 2,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "长扬科技",
+   "full": "长扬科技（北京）股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 23,
+    "ipv6": 7,
+    "gm": 1,
+    "fips": 0,
+    "epri": 11
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "快页",
+   "full": "快页信息技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "网宿科技",
+   "full": "网宿科技股份有限公司",
+   "categories": [
+    "数据安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 4,
+    "ipv6": 0,
+    "gm": 4,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "敏捷科技",
+   "full": "江苏敏捷科技股份有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 2,
+    "ipv6": 0,
+    "gm": 3,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "博通智能",
+   "full": "深圳市博通智能技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "数存科技",
+   "full": "深圳市数存科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "闪捷信息",
+   "full": "闪捷信息技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 10,
+    "ipv6": 3,
+    "gm": 7,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "亿赛通",
+   "full": "北京亿赛通科技发展有限责任公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 4,
+    "ipv6": 2,
+    "gm": 1,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "世平信息",
+   "full": "杭州世平信息科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 6
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "炼石网络",
+   "full": "北京炼石网络技术有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 2,
+    "ipv6": 0,
+    "gm": 15,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "快快云安全",
+   "full": "厦门快快网络科技有限公司",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 3,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Varonis",
+   "full": "Varonis Systems, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "BigID",
+   "full": "BigID, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Cyera",
+   "full": "Cyera, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Forcepoint",
+   "full": "Forcepoint, LLC",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 12,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Imperva",
+   "full": "Imperva, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Rubrik",
+   "full": "Rubrik, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 2,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Securiti",
+   "full": "SECURITI.ai, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Nightfall AI",
+   "full": "Nightfall AI, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Proofpoint",
+   "full": "Proofpoint, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 9,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Symmetry Systems",
+   "full": "Symmetry Systems, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Wiz",
+   "full": "Wiz, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "NextLabs",
+   "full": "NextLabs, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Tenable",
+   "full": "Tenable Holdings, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Qualys",
+   "full": "Qualys, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "CrowdStrike",
+   "full": "CrowdStrike Holdings, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "SentinelOne",
+   "full": "SentinelOne, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Darktrace",
+   "full": "Darktrace plc",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Cohesity",
+   "full": "Cohesity, Inc.",
+   "categories": [
+    "数据安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 5,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "亚信安全",
+   "full": "亚信安全科技股份有限公司",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "竹云科技",
+   "full": "深圳竹云科技股份有限公司",
+   "categories": [
+    "身份安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 7,
+    "ipv6": 0,
+    "gm": 6,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "芯盾时代",
+   "full": "北京芯盾时代科技有限公司",
+   "categories": [
+    "身份安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 2,
+    "ipv6": 0,
+    "gm": 6,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "派拉软件",
+   "full": "上海派拉软件股份有限公司",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 2,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "安讯奔",
+   "full": "北京安讯奔科技有限责任公司",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "飞天诚信",
+   "full": "飞天诚信科技股份有限公司",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 5,
+    "ipv6": 0,
+    "gm": 40,
+    "fips": 7,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "九州云腾",
+   "full": "北京九州云腾科技有限公司",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "中孚信息",
+   "full": "中孚信息股份有限公司",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 43,
+    "fips": 0,
+    "epri": 4
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "一砂信息",
+   "full": "北京一砂信息技术有限公司",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 3,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "易安联",
+   "full": "南京易安联网络技术有限公司",
+   "categories": [
+    "身份安全",
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 4,
+    "ipv6": 0,
+    "gm": 4,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Okta",
+   "full": "Okta, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 3,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "CyberArk",
+   "full": "CyberArk Software Ltd.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 5,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "SailPoint",
+   "full": "SailPoint Technologies Holdings, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Ping Identity",
+   "full": "Ping Identity Corporation",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Saviynt",
+   "full": "Saviynt, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 4,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "BeyondTrust",
+   "full": "BeyondTrust Corporation",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Delinea",
+   "full": "Delinea, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "One Identity",
+   "full": "One Identity LLC (Quest Software)",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Microsoft Entra",
+   "full": "Microsoft Corporation",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 175,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Silverfort",
+   "full": "Silverfort, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Veza",
+   "full": "Veza Technologies, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "1Password",
+   "full": "1Password (AgileBits Inc.)",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Dashlane",
+   "full": "Dashlane, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Bitwarden",
+   "full": "Bitwarden, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Yubico",
+   "full": "Yubico, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 8,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Duo Security",
+   "full": "Duo Security (Cisco Systems)",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "ForgeRock",
+   "full": "ForgeRock, Inc.",
+   "categories": [
+    "身份安全"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "深信服",
+   "full": "深信服科技股份有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 54,
+    "ipv6": 18,
+    "gm": 155,
+    "fips": 0,
+    "epri": 30
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "腾讯安全",
+   "full": "腾讯云计算（北京）有限责任公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 25,
+    "ipv6": 4,
+    "gm": 10,
+    "fips": 0,
+    "epri": 3
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "辰尧科技",
+   "full": "辰尧科技（北京）有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "青藤云安全",
+   "full": "青藤云安全科技有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "蔷薇灵动",
+   "full": "北京蔷薇灵动科技有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "华为",
+   "full": "华为技术有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 249,
+    "ipv6": 50,
+    "gm": 112,
+    "fips": 8,
+    "epri": 515
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "火山引擎",
+   "full": "火山引擎科技有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 16,
+    "ipv6": 0,
+    "gm": 2,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "360安全",
+   "full": "三六零安全科技股份有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "亿格云",
+   "full": "杭州亿格云科技有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 1,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "安博通",
+   "full": "北京安博通科技股份有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 29,
+    "ipv6": 3,
+    "gm": 2,
+    "fips": 0,
+    "epri": 22
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "山石网科",
+   "full": "山石网科通信技术股份有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 95,
+    "ipv6": 7,
+    "gm": 23,
+    "fips": 0,
+    "epri": 66
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "绿盟科技",
+   "full": "绿盟科技集团股份有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 91,
+    "ipv6": 25,
+    "gm": 28,
+    "fips": 0,
+    "epri": 63
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "指掌易",
+   "full": "北京指掌易科技有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 3,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "数安行",
+   "full": "北京数安行科技有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "安几科技",
+   "full": "上海安几科技有限公司",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 1,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Zscaler",
+   "full": "Zscaler, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 5,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Palo Alto Networks",
+   "full": "Palo Alto Networks, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 76,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Netskope",
+   "full": "Netskope, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 1,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Cloudflare",
+   "full": "Cloudflare, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Cisco",
+   "full": "Cisco Systems, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 305,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Fortinet",
+   "full": "Fortinet, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 118,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Check Point",
+   "full": "Check Point Software Technologies Ltd.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 25,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Illumio",
+   "full": "Illumio, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Appgate",
+   "full": "Appgate, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Akamai",
+   "full": "Akamai Technologies, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Twingate",
+   "full": "Twingate, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Cato Networks",
+   "full": "Cato Networks, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Google",
+   "full": "Alphabet Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 50,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "SonicWall",
+   "full": "SonicWall, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 29,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Versa Networks",
+   "full": "Versa Networks, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 3,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  },
+  {
+   "short": "Menlo Security",
+   "full": "Menlo Security, Inc.",
+   "categories": [
+    "网络安全·零信任"
+   ],
+   "counts": {
+    "wz": 0,
+    "ipv6": 0,
+    "gm": 0,
+    "fips": 0,
+    "epri": 0
+   },
+   "note": "counts为证书总数口径(2026-09快照)，非有效口径；有效数见 data/competitor_gm.json",
+   "priority": "watch"
+  }
+ ]
+}

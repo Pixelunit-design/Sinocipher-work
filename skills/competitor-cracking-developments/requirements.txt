@@ -1,0 +1,4 @@
+# competitor-cracking-developments 技能包 Python 依赖
+# 数据刷新脚本 update_data.py 与校验脚本 validate_data.py 仅需标准库；
+# Excel 生成脚本 build_excel.py 需要 openpyxl：
+openpyxl>=3.0

@@ -1,0 +1,19 @@
+{
+ "last_report_id": "R2026-11F",
+ "last_report_file": "outputs/2026年11月26日竞品动态增量快报.html",
+ "last_report_date": "2026-11-26",
+ "covered_until": "2026-11-26",
+ "covered_until_note": "11.26增量快报含前期补收(11.9/11.18)；下期窗口从11.27起",
+ "dedup_rule": "新条目须先与 data/events.jsonl 按企业+事件时间+标题相似度比对，命中即标'已覆盖'或'补收'",
+ "report_classification": "按动态属性分类（中标订单/产品发布/政策标准/资质认证/安全事件/市场情绪），不按业务方向分章（D15）",
+ "report_index_file": "state/report-index.json",
+ "data_snapshot_note": "资质快照2026-09-07（data/README.md）；商密计数可用 scripts/update_data.py 刷新",
+ "open_items": [
+  "11月三期+11月末快报未回填台账（用户要求时按五段式追加）",
+  "IPv6对标补证矩阵sheet待用户确认",
+  "后量子对外表述方案/具身智能选题/密码行业谁在赚钱 三篇文章未起草",
+  "关基密码国标征求意见（截止2027-1-19）我方是否参与待定",
+  "81家密评资质名单中我方/合作方位置待核对"
+ ],
+ "updated_at": "2026-11-26"
+}

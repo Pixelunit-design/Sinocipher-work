@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月底竞品动态快报（10.27—10.30） | 中安云科</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+    background: #f5f7fa; color: #2c3e50; line-height: 1.75;
+    padding: 0 0 60px;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+  header {
+    background: linear-gradient(135deg, #0b3d6b 0%, #1565a8 55%, #1e88c7 100%);
+    color: #fff; padding: 46px 0 38px; margin-bottom: 34px;
+    box-shadow: 0 4px 22px rgba(11,61,107,.22);
+  }
+  header h1 { font-size: 30px; font-weight: 700; letter-spacing: .5px; }
+  header .sub { margin-top: 12px; font-size: 14px; opacity: .88; }
+  header .tags { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+  header .tag {
+    background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.34);
+    padding: 5px 13px; border-radius: 14px; font-size: 12.5px;
+  }
+
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 34px; }
+  .card {
+    background: #fff; border-radius: 10px; padding: 20px 20px 18px;
+    border-left: 4px solid #1565a8; box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  }
+  .card.urgent { border-left-color: #c0392b; }
+  .card.urgent .num { color: #c0392b; }
+  .card .num { font-size: 27px; font-weight: 700; color: #0b3d6b; line-height: 1.2; }
+  .card .num small { font-size: 14px; font-weight: 600; }
+  .card .lbl { font-size: 12.5px; color: #7a8899; margin-top: 6px; }
+
+  section { margin-bottom: 40px; }
+  h2.sec {
+    font-size: 20px; color: #0b3d6b; padding: 0 0 12px 14px;
+    border-left: 5px solid #1e88c7; border-bottom: 1px solid #e2e9f0;
+    margin-bottom: 22px; display: flex; align-items: baseline; gap: 12px;
+  }
+  h2.sec .cnt { font-size: 12.5px; color: #8b9aab; font-weight: 400; }
+  h2.sec.red { border-left-color: #c0392b; color: #8e2b21; }
+
+  .alert {
+    background: linear-gradient(135deg, #fdf0ee 0%, #fff9f8 100%);
+    border: 1px solid #f0c7c1; border-left: 5px solid #c0392b;
+    border-radius: 0 10px 10px 0; padding: 22px 26px; margin-bottom: 20px;
+  }
+  .alert h3 { font-size: 17px; color: #8e2b21; margin-bottom: 12px; }
+  .alert p { font-size: 14px; color: #4a3a38; margin-bottom: 10px; }
+  .alert p:last-child { margin-bottom: 0; }
+  .alert strong { color: #c0392b; }
+
+  .co {
+    background: #fff; border-radius: 10px; margin-bottom: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.055); overflow: hidden;
+    border-top: 3px solid #1e88c7;
+  }
+  .co.prio { border-top-color: #d9822b; }
+  .co-head {
+    padding: 15px 22px; background: #fbfcfe; border-bottom: 1px solid #edf1f6;
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  }
+  .co-name { font-size: 16.5px; font-weight: 700; color: #0b3d6b; }
+  .co-full { font-size: 12px; color: #93a1b0; }
+  .badge {
+    font-size: 11.5px; padding: 2.5px 9px; border-radius: 10px;
+    background: #e8f1fa; color: #1565a8; font-weight: 600;
+  }
+  .badge.hot { background: #fdf0e3; color: #b8651a; }
+  .badge.warn { background: #fdeaea; color: #c0392b; }
+  .badge.new { background: #e7f6ec; color: #1e7e45; }
+  .co-body { padding: 16px 22px 18px; }
+  .co-body p { font-size: 14px; margin-bottom: 10px; color: #3c4a58; }
+  .co-body p:last-child { margin-bottom: 0; }
+  .co-body strong { color: #0b3d6b; }
+  .src { font-size: 11.5px; color: #9aa8b6; margin-top: 11px; padding-top: 9px; border-top: 1px dashed #e8edf3; }
+
+  .pol {
+    background: #fff; border-radius: 10px; padding: 18px 22px; margin-bottom: 14px;
+    border-left: 4px solid #7a5cc4; box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  }
+  .pol .ph { font-size: 15px; font-weight: 700; color: #4a3585; margin-bottom: 7px; }
+  .pol .pd { font-size: 13.5px; color: #46535f; }
+  .pol .meta { font-size: 11.5px; color: #98a4b1; margin-top: 8px; }
+
+  table { width: 100%; border-collapse: collapse; background: #fff; font-size: 13px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.05); border-radius: 8px; overflow: hidden;
+    margin-bottom: 8px; }
+  th { background: #0b3d6b; color: #fff; padding: 11px 12px; text-align: left; font-weight: 600; font-size: 12.5px; }
+  td { padding: 10px 12px; border-bottom: 1px solid #edf1f6; color: #3c4a58; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafcfe; }
+  tr.zayk td { background: #fffbe8; font-weight: 600; color: #7f6000; }
+  tr.win td { background: #f0f9f2; }
+  td .hi { color: #c0392b; font-weight: 600; }
+  td .ok { color: #1e7e45; font-weight: 600; }
+  .tbl-note { font-size: 11.5px; color: #98a4b1; margin-bottom: 22px; }
+
+  .insight {
+    background: linear-gradient(135deg, #fff8ec 0%, #fffdf7 100%);
+    border: 1px solid #f0d9b5; border-radius: 10px; padding: 20px 24px; margin-bottom: 18px;
+  }
+  .insight h3 { font-size: 15.5px; color: #9a6216; margin-bottom: 11px; }
+  .insight ul { margin-left: 19px; }
+  .insight li { font-size: 13.8px; color: #4a4238; margin-bottom: 8px; }
+  .insight li:last-child { margin-bottom: 0; }
+
+  .comment {
+    background: #f0f5fa; border-left: 4px solid #1e88c7;
+    padding: 18px 22px; border-radius: 0 8px 8px 0; font-size: 14px; color: #33475b;
+  }
+  .comment p { margin-bottom: 10px; }
+  .comment p:last-child { margin-bottom: 0; }
+
+  footer { text-align: center; font-size: 12px; color: #9aa8b6; margin-top: 44px;
+    padding-top: 22px; border-top: 1px solid #e2e9f0; }
+  @media (max-width: 860px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    header h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>2026年10月底竞品动态快报</h1>
+    <div class="sub">监测区间：2026年10月27日 — 10月30日（增量快报）　|　衔接《10月下半月竞品动态调研报告》　|　出具日期：2026年10月30日</div>
+    <div class="tags">
+      <span class="tag">新规收官日实录</span>
+      <span class="tag">五家三季报</span>
+      <span class="tag">AI 安全商业化</span>
+      <span class="tag">招标风向</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ===== 概览 ===== -->
+  <div class="cards">
+    <div class="card urgent">
+      <div class="num">今天</div>
+      <div class="lbl">电子认证合规整改<br>过渡期正式到期（10月30日）</div>
+    </div>
+    <div class="card">
+      <div class="num">5</div>
+      <div class="lbl">密码厂商三季报<br>（10/27—10/29 集中披露）</div>
+    </div>
+    <div class="card">
+      <div class="num">1</div>
+      <div class="lbl">监管文件号首次确认<br>工信发函〔2026〕181号</div>
+    </div>
+    <div class="card">
+      <div class="num">2</div>
+      <div class="lbl">中央级政府采购样本<br>（海关 / 应急管理部）</div>
+    </div>
+  </div>
+
+  <!-- ===== 置顶 ===== -->
+  <section>
+    <h2 class="sec red">【置顶】新规收官日实录：今天，合规整改过渡期正式结束 <span class="cnt">落地案例 · 文件号确认 · 应用侧影响</span></h2>
+
+    <div class="alert">
+      <h3>① 监管原文件号确认：工信发函〔2026〕181号</h3>
+      <p>多份应用侧通知披露了本次整改的监管原文件：<strong>2026年4月，工业和信息化部信息技术发展司下发《关于做好电子认证业务规则相关工作的通知》（工信发函〔2026〕181号）</strong>。此前我方跟踪多轮只知"主管部门发函"，现已拿到准确文件号与名称——<strong>《电子认证业务规则规范》培训视频口播稿和解读文案中的政策溯源，请统一引用为"工信发函〔2026〕181号"，配套 T/CQAE 11034—2025 标准</strong>。</p>
+
+      <h3 style="margin-top:18px">② 到期日前的行业落地节奏（10月25日—30日）</h3>
+      <p><strong>沃通CA（10月25日）：</strong>新版《电子认证业务规则（CPS）》V2.0 完成<strong>主管部门备案</strong>并正式发布，覆盖证书类型与策略OID、身份查验、意愿记录、协议签署、密钥管理、撤销续期、法律责任等全部规则要素；对外明确提出"<strong>CA直验、CA直签</strong>"合规红线；按"分类分级"对<strong>个人/机构 × 基础级/高等级</strong>四类证书差异化核验；<strong>"双录"系统已正式上线</strong>——高等级证书申请以录音录像方式完整记录告知内容和真实意愿。</p>
+      <p><strong>东南大学（10月30日晚执行）：</strong>全校电子签章系统今晚升级，所有教职工须重新实名认证并申领新证书，流程为"实名信息 → 阅读协议弹窗 → 人脸识别 → <strong>语音视频双录</strong> → 自动签发"；<strong>个人证书实行两年期管理</strong>，到期需重新实名办理。这是"个人证书两年期"首次在应用侧通知中出现，值得记录。</p>
+      <p><strong>苏州市公共资源交易平台（10月26日发通知）：</strong>接软件服务商紧急通知，<strong>原"多因子事件证书服务"自2026年10月30日起停止提供</strong>，评标电子签章须使用评委本人 CA 锁操作，未携带按《江苏省综合评标专家库和专家管理细则》考核。——<strong>过去靠"事件证书/一次一密"类便捷签章绕开个人证书实名流程的玩法，从今天起正式停服</strong>。</p>
+      <p><strong>CFCA（10月26日、10月29日两轮发声）：</strong>10月26日发布合作伙伴合规升级方案（统一接口、高等级证书自动触发音视频双录、基础级证书支持人脸识别/短信/银行卡要素等动态核验）；10月29日在《中国金融新闻网》发表《AI 时代的电子认证安全与法律效力》，<strong>把新规与 AI 深度伪造攻击绑定叙事</strong>——"多因子核验 + 数字证书"组合拳对抗智能伪造。</p>
+
+      <h3 style="margin-top:18px">③ 对应用侧客户的三个直接影响</h3>
+      <p>① <strong>办证体验变重</strong>：高等级证书强制双录，个人证书两年期到期重办——终端感知最明显的两条；② <strong>"事件证书"类便捷签章通道关停</strong>：公共资源交易、评标等场景首当其冲；③ <strong>存量证书暂不受影响，但续期一律走新流程</strong>。</p>
+      <div class="src">来源：沃通CA官网（2026-10-29）、东南大学吴健雄学院通知（2026-10-30执行）、苏州市公共资源交易中心张家港分中心（2026-10-26）、中国金融新闻网（2026-10-29）、同花顺行业频道（2026-10-26）</div>
+    </div>
+
+    <div class="insight">
+      <h3>今天就可以做的三件事</h3>
+      <ul>
+        <li><strong>公众号发收官稿（今天下午最优）</strong>：《CA 新规过渡期今天收官：这些变化已经生效》——用沃通/东南大学/苏州三个真实落地案例说话，比讲条文更有传播力。如果来不及今天发，明早发"收官后的第一周"角度也可。</li>
+        <li><strong>把"工信发函〔2026〕181号"写进所有在途材料</strong>：培训口播稿、解读PPT、投标文件的合规引用部分，文件号补齐后权威性明显不同。</li>
+        <li><strong>排查存量客户的"事件证书"依赖</strong>：苏州案例说明这类通道已被停服，凡走类似便捷签章的客户，续期、换证需求会在未来 1—2 个月集中出现，是商务跟进窗口。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 三季报 ===== -->
+  <section>
+    <h2 class="sec">一、五家密码上市公司三季报盘点 <span class="cnt">10/27—10/29 集中披露 · 一句话格局：三未独赢，其余继续亏损</span></h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:13%">公司</th>
+          <th style="width:11%">披露日</th>
+          <th style="width:16%">前三季度营收</th>
+          <th style="width:15%">前三季度归母净利</th>
+          <th style="width:45%">关键信息</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="win">
+          <td>三未信安</td>
+          <td>10月27日</td>
+          <td><span class="ok">3.47 亿（+17.61%）</span></td>
+          <td><span class="ok">551 万（同比扭亏）</span></td>
+          <td>Q3 单季营收 1.37 亿（<span class="ok">+37.62%</span>），归母净利 1807 万（<span class="ok">+284.6%</span>）；毛利率 76.11%；官方口径"<strong>芯片业务规模显著增加，抗量子密码等新开拓领域相关项目逐步落地</strong>"，金融、运营商、铁路客户推动收入增长。Q3 扣非 1474 万（+197.11%），是五家中唯一扣非为正的</td>
+        </tr>
+        <tr>
+          <td>天融信</td>
+          <td>10月28日</td>
+          <td>8.50 亿</td>
+          <td>（未单独披露利润额）</td>
+          <td>Q3 单季营收 3.05 亿；<strong>AI 安全数十个项目中标落地</strong>（省级财政、电子政务、国有银行、省级电网、疾控、高校等）；大模型安全网关获<strong>国内首张大模型安全防护围栏（增强级）证书</strong>；首批通过工信部 AI 服务安全两项二级认证（最高级）</td>
+        </tr>
+        <tr>
+          <td>吉大正元</td>
+          <td>10月29日</td>
+          <td>2.20 亿（-5.15%）</td>
+          <td>-7133 万（+3.11%，微幅减亏）</td>
+          <td>Q3 单季营收 7728 万，归母净利 -3622 万（同比 -18.83%）；连续三年半亏损（2022 年至今每年归母均为负）</td>
+        </tr>
+        <tr>
+          <td>格尔软件</td>
+          <td>10月29日</td>
+          <td>（前三季未披露总额）</td>
+          <td>（前三季未披露总额）</td>
+          <td>Q3 单季营收 1.096 亿（<span class="hi">-8.49%</span>），归母净利 <span class="hi">-1945 万</span>（同比 -367%，由盈转亏幅度大）；2025 年全年已亏 8477 万</td>
+        </tr>
+        <tr>
+          <td>信安世纪<br>（ST信安）</td>
+          <td>10月29日</td>
+          <td>2.98 亿（-6.28%）</td>
+          <td><span class="hi">-4432 万</span>（-25.27%）</td>
+          <td>Q3 单季归母同比 -99.75%（近乎归零）；毛利率 69.84% 仍高，但收入端收缩；经营现金流 -7101 万</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tbl-note">注：天融信未在摘要中单列利润，其余四家利润数据来自交易所披露的 Q3 单季/前三季口径。三未信安按 10月26日收盘价计算市盈率（TTM）约 4275 倍——盈利质量仍薄，"扭亏"更多是信号意义而非盈利能力质变。</div>
+
+    <div class="insight">
+      <h3>三季报的三个判断</h3>
+      <ul>
+        <li><strong>三未信安把"后量子 + 芯片"讲成了业绩故事，而且市场买账。</strong>它是五家中唯一营收利润双正增长的，且明确把增量归因于"芯片业务规模显著增加 + 抗量子新领域项目落地"。上半年它连拿工业互联网研究院、中国移动吉林、华能滇东三单，现在有了财报交叉验证——<strong>后量子对三未已不是概念，是收入</strong>。</li>
+        <li><strong>CA 系（吉大正元、格尔、信安世纪）继续亏损，格尔 Q3 由盈转亏最扎眼。</strong>三季度的密码市场钱被"有芯片、有整机、有大单交付能力"的厂商拿走了，纯 PKI/证书服务的传统 CA 系收入承压。格尔的问题在于：后量子方案声量最大，但 Q3 财务没有兑现，说明<strong>抗量子订单尚未形成规模收入，行业整体仍处投入期</strong>——这对我方是缓冲期，也是机会窗口。</li>
+        <li><strong>天融信的 AI 安全已经跑到"数十个项目"的量级。</strong>其"用AI、护AI"框架 + 8 款产品 + 国内首张增强级围栏证书的组合，正在吃掉预算表里新出现的"AI 安全"科目。<strong>预算表里"AI 安全"科目每出现一次，都是天融信、绿盟们的增量、纯密码厂商的相对份额损失</strong>——我方需要在"AI 安全"科目下有自己的占位产品叙事（数字证书作为 AI 信任根）。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 厂商动态 ===== -->
+  <section>
+    <h2 class="sec">二、厂商动态 <span class="cnt">本期 3 条</span></h2>
+
+    <div class="co prio">
+      <div class="co-head">
+        <span class="co-name">天融信</span>
+        <span class="co-full">天融信科技集团（深主板 002212）</span>
+        <span class="badge hot">AI 安全体系成型</span>
+        <span class="badge new">自动化渗透系统将发布</span>
+      </div>
+      <div class="co-body">
+        <p><strong>除三季报外，产品体系有两条增量信息：</strong>①围绕大模型与智能体全生命周期安全，提出"<strong>三域一平面</strong>"防护框架，已推出<strong>8 款产品服务</strong>：大模型安全网关、大模型数据安全监测、API 安全审计、AI 安全评估系统、大模型安全评估服务、智能体安全评估服务、智能体安全管理系统、AI 网关，并配套发布政务、金融、教育、制造行业智能体安全防护专项方案；②<strong>基于 RHP 架构的自动化渗透测试系统将于近期发布</strong>，把渗透测试从人工转向 AI 驱动。</p>
+        <p><strong>资质卡位：</strong>大模型安全网关获<strong>国内首张大模型安全防护围栏（增强级）证书</strong>；公司<strong>首批</strong>通过工信部人工智能服务安全建设和安全检测能力两项二级认证（最高级）。另据其业绩交流口径，市场对 AI 安全"从试点转入规模化建设"后的预期是"<strong>荷花效应</strong>"式指数增长（引 Mordor Intelligence：全球 AI 网络安全市场 2025 年 309 亿美元 → 2030 年 863 亿美元）。</p>
+        <p>另中标<strong>全国海关信息中心 2026年数据安全保护平台维保服务</strong>（29.5 万元，10月29日成交公告，综合得分 91.74）。</p>
+        <div class="src">来源：网易/证券时报（2026-10-28）、今日头条/前沿经济日报（2026-10-28）、天天基金/上证报（2026-10-28）、中国政府采购网（2026-10-29）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">绿盟科技</span>
+        <span class="co-full">绿盟科技集团（创业板 300369）</span>
+        <span class="badge warn">投标低级失误出局</span>
+      </div>
+      <div class="co-body">
+        <p><strong>应急管理部消防救援局南京训练总队网络安全三级等保建设项目（预算 340.84 万元）公开招标中，北京神州绿盟科技有限公司因"投标函、授权委托书中投标人代表均未签字"未通过符合性审查，直接出局。</strong>项目由网御星云以 206.18 万元中标（高级威胁检测平台 Leadsec-TAR-AIO-GCH-1CNL × 3）。</p>
+        <p><strong>这条的真实价值不在绿盟本身，而是两条通用教训：</strong>①<strong>符合性审查是"一票否决"环节，签字盖章这类低级失误足以让 340 万的项目直接作废</strong>——我方投标文件的签署环节应有双人复核清单；②该项目预算 340 万、中标 206 万（约 6 折），中央级等保建设项目的价格竞争同样激烈。</p>
+        <div class="src">来源：中国政府采购网（2026-10-29）</div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div class="co-head">
+        <span class="co-name">CFCA</span>
+        <span class="co-full">中金金融认证中心</span>
+        <span class="badge new">新规 × AI 反伪造叙事</span>
+      </div>
+      <div class="co-body">
+        <p><strong>10月29日在《中国金融新闻网》发表《AI 时代的电子认证安全与法律效力》，把电子认证新规与 AI 深度伪造攻击绑定为同一个命题。</strong>核心论点三层：①"多因子核验 + 数字证书"组合拳对抗智能伪造（证件核验 → 银行卡要素 → 活体检测 → 人脸识别 → 高风险场景音视频双录，叠加公钥密码体系与私钥专有控制）；②第三方电子认证的全流程留痕闭环（申请告知 → 身份核验 → 意愿确认 → 协议签署 → 证书签发 → 数据留存 → 归档验签）天然构成司法证据链；③根密钥离线保管、加密机物理防护、证书状态实时管理、密钥定期轮换、多中心灾备是企业自建无法复制的运维体系。</p>
+        <p><strong>这是本周期最值得我方借鉴的一篇对外文案：</strong>它没有讲技术参数，而是把"合规新规 + AI 攻击 + 法律效力 + 运维保障"四件事拧成一个对客户有直接利益的故事。我方公众号的收官稿可以沿用这个结构。</p>
+        <div class="src">来源：中国金融新闻网（financialnews.com.cn，2026-10-29）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 招标 ===== -->
+  <section>
+    <h2 class="sec">三、本期招标风向 <span class="cnt">2 个中央级样本</span></h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:28%">采购单位</th>
+          <th style="width:34%">项目</th>
+          <th style="width:12%">金额</th>
+          <th style="width:26%">结果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>全国海关信息中心</td>
+          <td>2026年数据安全保护平台维保服务（竞争性磋商）</td>
+          <td>29.50 万元</td>
+          <td>天融信（综合得分 91.74）</td>
+        </tr>
+        <tr>
+          <td>应急管理部消防救援局南京训练总队</td>
+          <td>网络安全三级等保建设项目（预算 340.84 万）</td>
+          <td>206.18 万元</td>
+          <td>网御星云（绿盟因投标文件未签字符合性审查未通过出局）</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tbl-note">延续上期判断：密评/密改小单（3—30 万）集中在地市机关；本期新增观察是中央级"维保+等保"类项目——维保是存量盘，等保建设 6 折成交，价格战已到中央预算单位。</div>
+  </section>
+
+  <!-- ===== 启示 ===== -->
+  <section>
+    <h2 class="sec">四、本周行动清单</h2>
+    <div class="insight">
+      <ul>
+        <li><strong>今天下午 / 明早：发新规收官稿。</strong>素材已齐（沃通 CPS 备案 + 东南大学双录升级 + 苏州事件证书停服 + CFCA AI 叙事），角度建议"哪些变化已经生效 + 企业客户接下来 30 天要做什么"。</li>
+        <li><strong>本周：把"工信发函〔2026〕181号"补进所有在途引用。</strong>培训口播稿、解读 PPT、投标文件的政策溯源部分统一替换。</li>
+        <li><strong>商务侧：排查"事件证书"类依赖客户。</strong>苏州的停服通知是风向标，被停服通道的客户会在 11—12 月集中找替代方案。</li>
+        <li><strong>内容侧：三季报给了一个现成选题——"密码行业谁在真正赚钱"。</strong>三未一枝独秀 + CA 系集体亏损 + AI 安全科目分流预算，用三个数字讲清行业分化，中立、有数据、讨论度高。</li>
+        <li><strong>投标内控：给标书签署环节加双人复核。</strong>绿盟 340 万项目因"没签字"出局，这条教训零成本吸取。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 小编评论 ===== -->
+  <section>
+    <h2 class="sec">五、小编评论</h2>
+    <div class="comment">
+      <p>今天是电子认证新规过渡期的最后一天。回头看，这次整改真正改变的不是 CA 的制度文件，而是三件很具体的事：<strong>高等级证书要录视频了、个人证书两年就得重办一次、"一次性的事件证书"通道关掉了。</strong>终端用户从今天起会真实地感受到办证变麻烦——而"变麻烦"恰恰是这次新规的目的：让每一张证书背后都有一个可追溯的真人意愿。麻烦是信任的成本。</p>
+      <p>三季报同天出来，有点黑色幽默：<strong>行业里最会讲抗量子故事的格尔，三季度亏了 1945 万；而闷头做芯片和整机的三未，靠"抗量子项目逐步落地"实现单季净利 1807 万、同比增长 284%。</strong>同一个概念，讲的人没赚到钱，做的人赚到了。这不说明故事不重要——三未的故事讲得其实更扎实，它每一单后量子中标都有公告可查。它说明的是：<strong>在投入期，谁先把技术变成能交付的东西，谁先拿到钱。</strong></p>
+      <p>最后说个细节。绿盟在一个 340 万的项目上，因为投标函忘了签字被直接判出局。这个级别的公司犯这种错误，说明投标流程管理是所有人的难题，不是小公司的专利。我们该做的不是嘲笑，是今天就去把复核清单加上。</p>
+    </div>
+  </section>
+
+  <footer>
+    中安云科 市场部 · 竞品动态监测　|　监测区间 2026年10月27日 — 10月30日（增量快报）　|　出具日期 2026年10月30日<br>
+    前序报告：《2026年10月下半月竞品动态调研报告》（10.20—10.26）、《2026年10月上半月竞品动态调研报告》（10.5—10.20）
+  </footer>
+
+</div>
+</body>
+</html>

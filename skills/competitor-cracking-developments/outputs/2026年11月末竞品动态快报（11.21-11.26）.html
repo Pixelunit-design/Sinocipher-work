@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: "Microsoft YaHei", sans-serif; max-width: 1080px; margin: 0 auto; color: #222; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1a3a5c, #2c6e9e); color: #fff; padding: 28px 32px; border-radius: 12px; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0; }
+  .card { background: #f5f8fb; border-radius: 8px; padding: 12px; text-align: center; }
+  .card b { display: block; font-size: 1.5em; color: #1a3a5c; }
+  h2.sec { border-left: 5px solid #2c6e9e; padding-left: 10px; margin-top: 34px; }
+  .co { border: 1px solid #e3e9ef; border-radius: 8px; padding: 12px 16px; margin: 10px 0; }
+  .co.prio { border-top: 3px solid #e67e22; }
+  .co-name { font-weight: bold; font-size: 1.05em; }
+  .badge { display: inline-block; font-size: 0.75em; padding: 1px 8px; border-radius: 10px; margin-left: 8px; vertical-align: middle; }
+  .badge.hot  { background: #fdecea; color: #c0392b; }
+  .badge.warn { background: #fef5e7; color: #b9770e; }
+  .badge.new  { background: #e8f6f3; color: #148f77; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { border: 1px solid #dde5ec; padding: 6px 10px; font-size: 0.92em; text-align: left; vertical-align: top; }
+  th { background: #eef4fb; }
+  tr:nth-child(even) { background: #f7fafc; }
+  .insight { background: #eef4fb; border-left: 4px solid #2c6e9e; padding: 12px 16px; margin: 16px 0; }
+  .muted { color: #888; font-size: 0.85em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>2026年11月末竞品动态快报（11.21—11.26）</h1>
+    <p>监测区间：2026-11-21 至 11-26（补收11.18—11.20两条大会条目）｜ 出具日期：11-26 ｜ 与《11月第3周报告（11.14-11.20）》去重</p>
+    <p class="muted">本期起报告按动态属性分类（中标订单/产品发布/政策标准/资质认证/安全事件），不再按业务方向分章。检索通道备注：常规检索受审批拦截，改用行业多源调研通道。</p>
+  </div>
+  <div class="cards">
+    <div class="card"><b>6</b>中标/订单</div>
+    <div class="card"><b>4</b>产品发布/技术动作</div>
+    <div class="card"><b>4</b>政策/标准</div>
+    <div class="card"><b>2</b>资质认证/安全事件</div>
+  </div>
+
+  <h2 class="sec">〇、本期一句话</h2>
+  <div class="insight">政策端<b>关基密码应用国标首次征求意见</b>；认证端<b>鲲鹏服务器内生密码模块拿下商密三级</b>（服务器厂商分食密码机市场的信号）；订单端三未信安把密码卖进<b>电网框架和车规级模块</b>；产品端格尔、深信服、绿盟集体押注<b>AI安全三件套化</b>。</div>
+
+  <h2 class="sec">一、中标与订单（6条）</h2>
+  <table>
+    <tr><th style="width:110px">日期</th><th style="width:120px">企业</th><th>项目与金额</th><th>形态信号</th></tr>
+    <tr><td><b>11.25</b></td><td>奇安信</td><td>安全设备集成 <b>4098万</b>（中央政采网）</td><td>本周最大单</td></tr>
+    <tr><td>11.21</td><td>天融信</td><td>中广核核电国产化工控安全框架 <b>1154万</b>（DCS/KCC/KRS/KZC/KSU五层纵深防御）</td><td>关基+国产化双背书，密码+工控组合是入场券</td></tr>
+    <tr><td>11.19-20</td><td>三未信安</td><td>云南电网2026年第1批整合框架「商用密码保障支持系统」标包2</td><td><b>南方电网密码框架供应商资格</b>——电网需求将由框架池分发</td></tr>
+    <tr><td>11.25</td><td>信安世纪（ST信安）</td><td>深交所SSL网关+签名验签服务器维保 <b>61.80万</b>，单一来源，3年</td><td>金融基础设施存量维保续签，"单一来源续命"模式再现</td></tr>
+    <tr><td>11.23</td><td>奇安信</td><td>农发行国密Electron桌面开发工具 <b>32.45万</b>（预算70万，约4.6折）</td><td><b>综合安全厂商抢走国密改造的"应用开发层"</b>——纯设备商叙事不够了</td></tr>
+    <tr><td>11.20</td><td>三未信安</td><td>中汽智能科技（天津）软件密码模块开发咨询（<b>11.30前交证</b>）</td><td><b>车规级/V2X密码</b>小标的出现：门槛低、卡位价值高</td></tr>
+  </table>
+  <p class="muted">其他（待公告核实）：奇安信移动2026-2028终端安全集采约5000万（70%份额、76万终端）；安恒白云区数据安全监测552.83万、移动贵州150.64万（100%份额）、衡水银行31.8万；华龙证券/中原银行/烟草海南等项目；格尔移动内蒙古商密扩容、烟草辽宁候选记录（第三方招投标索引，以公告为准）。</p>
+
+  <h2 class="sec">二、产品发布与技术动作（4条）</h2>
+  <div class="co prio"><span class="co-name">格尔软件</span><span class="badge new">AI三件套</span>
+    <p><b>11.23</b>中国密码学会大数据与AI安全青年学术会议（上海）现场发布：<b>AI大模型安全保险箱</b>（内核级透明加密解决"模型加载即解密裸奔"，过信通院专项评估）、<b>AI大模型应用安全护栏</b>（提示词注入/越狱检测+交互日志签存）、<b>智能体身份管理平台</b>。同时披露"国密+抗量子"双保险方案已在国泰海通证券网上交易系统<b>生产级部署</b>。<span class="muted">来源：东方网 11.23</span></p></div>
+  <div class="co"><span class="co-name">深信服</span>
+    <p><b>11.21</b>世界计算大会（长沙）发布<b>"AI安全平台"+"保护AI平台"双新品</b>并实战演示；叠加5月AI算力网关，形成"算力+保AI+AI安全"三件套。AI安全从概念进入平台化产品竞争。</p></div>
+  <div class="co"><span class="co-name">绿盟科技</span>
+    <p><b>11.21</b>电力行业信息化年会（合肥）发布<b>电力专用稽查加固工具</b>（无损扫描、2小时替代2天运维）+ <b>Meta-Agent多智能体漏洞挖掘架构</b>。</p></div>
+  <div class="co"><span class="co-name">信安世纪（技术口径）</span>
+    <p><b>11.18（补收）</b>算力互联网大会发表《后量子密码迁移：研究与实践》，明确<b>抗量子密码已纳入"十五五"信息化规划</b>，NIST与国内NGCC"双轨"并行——PQC政策时间表迄今最权威的官方口径。</p></div>
+
+  <h2 class="sec">三、政策与标准（4条）</h2>
+  <table>
+    <tr><th style="width:110px">日期</th><th>事项</th><th>意义</th></tr>
+    <tr><td><b>11.20</b></td><td>《网络安全技术 关键信息基础设施密码应用要求》等<b>6项国标公开征求意见</b>（含JSON密码语法、智能密码钥匙接口、密钥管理第3部分、带附录数字签名第2/3部分），反馈截止<b>2027-1-19</b>（网安秘字〔2026〕133号，TC260）</td><td><b>关基密码应用首次有专门国标</b>——关基+等保+密评三重叠加的增量需求正式标准化；征求意见期是参与标准编制的窗口</td></tr>
+    <tr><td>11.01实施</td><td><b>GB/T 35275-2026（SM2消息格式）、GB/T 47471-2026（SM9消息格式）</b>本月正式实施</td><td>跨厂商密码模块互联互通统一格式——催生存量系统改造+固件升级需求，密评"互联互通测试"卡点解除</td></tr>
+    <tr><td>11.17印发/11.26公开</td><td>《新一代通信网建设实施方案》（<b>工信部联通信〔2026〕267号</b>，三部门）：2030年建成，部署IPv6单栈、SRv6、6G，明确网络安全保障能力要求</td><td>通信网安全、IPv6+安全、卫星互联网安全获上位政策背书——与我方IPv6短板直接相关</td></tr>
+    <tr><td>11.20</td><td>网信办《实施网络安全标识的产品目录（第二批）》征求意见：智能门锁/音箱/儿童手表，一星至三星</td><td>IoT消费端安全认证扩容，终端密码/芯片安全检测链条受益</td></tr>
+    <tr><td>11.16</td><td class="muted">密评机构资质认定考核大纲（30省名单公示）；国家数据局第二批可信数据空间试点（11.19）</td><td class="muted">上期已覆盖，不重复展开</td></tr>
+  </table>
+
+  <h2 class="sec">四、资质与认证（1条）</h2>
+  <div class="co prio"><span class="co-name">鲲鹏安全计算密码模块</span><span class="badge hot">格局级</span>
+    <p><b>11.24</b>获商用密码产品安全<b>三级</b>认证（GM/T 0028，国内已颁发最高等级）。关键数据：应用字段加解密时延较加密机<b>下降超90%</b>、TPS提升超10倍，数据库透明加解密损耗&lt;10%，支持平滑演进至后量子算法。<b>服务器厂商内生密码能力开始对传统密码机形成替代压力</b>——但独立密码机在密钥管理、合规边界、独立部署场景仍有壁垒，密评条款写法是攻防焦点。<span class="muted">来源：中国网 11.24（厂商单方性能数据，待复核）</span></p></div>
+  <p class="muted">另：安全牛《Agent身份治理与数字信任体系建设研究》（11月下旬）将芯盾时代/格尔/绿盟等列为国内十家代表厂商——Agent身份治理"第一梯队名单"成形，属品牌认证类动态。</p>
+
+  <h2 class="sec">五、安全事件与风险警示（1条）</h2>
+  <div class="co warn"><span class="co-name">1Password（国际）</span><span class="badge warn">安全事件</span>
+    <p><b>11.25</b>披露员工GitHub账户遭未授权访问，部分客户数据泄露（姓名/邮箱/公钥/恢复token），密码库与密钥未泄露。又一例"供应链入口=员工账号"——与DigiCert事件复盘结论一致：核验材料与凭据的权限治理是密码厂商的命门。</p></div>
+
+  <h2 class="sec">六、市场情绪（11.26收盘）</h2>
+  <p>密码板块四只纯商密标的当日领涨（三未+4.52%、格尔+4.15%、吉大正元+2.02%、ST信安+0.81%），明显强于综合安全厂商——市场在给"抗量子+AI密码"叙事溢价；但近20日全板块普跌15%—21%，多数标的PE为负，Q4收入确认是全年生死线。</p>
+
+  <h2 class="sec">七、对中安云科的启示</h2>
+  <div class="insight"><b>1. 关基密码国标征求意见期（至2027-1-19）是参与标准的机会窗口</b>——组织技术团队提交意见，哪怕被采纳一条，投标材料即可写"参与国家标准编制"，花小钱办大事的品牌动作。</div>
+  <div class="insight"><b>2. 鲲鹏三级认证是警讯也是风向</b>：密评条款越来越接受"服务器内生密码模块"替代独立密码机。投标方案应主动写清独立密码机的密钥管理/合规边界优势，并研究SDF接口兼容路线。</div>
+  <div class="insight"><b>3. 三未的车规密码模块咨询标（30天交证）证明小标也能卡位新赛道</b>：车联网/V2X密码在我方射程内，建议排查本地车企/智能网联测试场的密码需求。</div>
+  <div class="insight"><b>4. 深交所单一来源维保再次提醒</b>：存量密码设备客户维保到期前3个月必须主动续约，不给竞品以公开招标切入的机会。</div>
+  <div class="insight"><b>5. PQC官方口径落地："十五五"规划已纳入抗量子密码</b>——后量子迁移主张有了国家规划背书，本季度内形成表述的紧迫性更高。</div>
+
+  <h2 class="sec">八、待复核</h2>
+  <p>格尔移动内蒙古扩容、烟草辽宁候选记录来自第三方招投标索引；安恒AI收入结构为半年报口径；鲲鹏模块性能数据为厂商单方披露；移动终端安全集采份额为媒体口径。</p>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>2026年11月第2周竞品动态调研报告（11.06—11.13）</title>
+<style>
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;margin:0;background:#f4f6fa;color:#2b3445;line-height:1.75}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 20px 60px}
+header{background:linear-gradient(135deg,#0b3d91 0%,#1565c0 55%,#0d7bb5 100%);color:#fff;border-radius:14px;padding:34px 38px;margin-bottom:22px}
+header h1{margin:0 0 8px;font-size:25px;letter-spacing:.5px}
+header .sub{opacity:.92;font-size:14px}
+header .win{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:3px 14px;margin-top:12px;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:26px}
+.card{background:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 2px 8px rgba(20,40,90,.07);border-top:3px solid #1565c0}
+.card b{display:block;font-size:24px;color:#0b3d91}
+.card span{font-size:12.5px;color:#68758a}
+h2.sec{font-size:20px;color:#0b3d91;border-left:5px solid #1565c0;padding-left:12px;margin:34px 0 14px}
+h3{font-size:16px;color:#123c6e;margin:22px 0 8px}
+.box{background:#fff;border-radius:12px;padding:20px 24px;box-shadow:0 2px 8px rgba(20,40,90,.07);margin-bottom:16px}
+.co{border-left:4px solid #1565c0;padding:12px 16px;background:#f8fafd;border-radius:8px;margin:12px 0}
+.co.prio{border-left-color:#e65100;background:#fff8f0}
+.co-name{font-weight:bold;color:#0b3d91;font-size:15px}
+.co-date{font-size:12px;color:#8a94a6;margin-left:8px}
+.badge{display:inline-block;font-size:11.5px;border-radius:10px;padding:1px 10px;margin-left:8px;vertical-align:1px}
+.hot{background:#fdecea;color:#c62828}
+.warn{background:#fff3e0;color:#e65100}
+.new{background:#e8f5e9;color:#2e7d32}
+.tag{display:inline-block;font-size:11.5px;background:#e3f0fc;color:#0b3d91;border-radius:10px;padding:1px 10px;margin-left:6px}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:13.5px;margin:10px 0}
+th{background:#0b3d91;color:#fff;padding:9px 10px;text-align:left;font-weight:600}
+td{padding:9px 10px;border-bottom:1px solid #e6ebf3;vertical-align:top}
+tr:nth-child(even) td{background:#f7f9fc}
+.insight{background:linear-gradient(90deg,#eef4ff,#f6f9ff);border:1px solid #c9dcf5;border-radius:10px;padding:14px 18px;margin:14px 0;font-size:14px}
+.insight b{color:#0b3d91}
+.foot{text-align:center;color:#9aa5b5;font-size:12px;margin-top:36px}
+ul{margin:6px 0 6px 20px;padding:0}
+li{margin:4px 0}
+</style>
+</head>
+<body><div class="wrap">
+
+<header>
+<h1>2026年11月第2周竞品动态调研报告</h1>
+<div class="sub">监测区间：2026年11月6日 — 11月13日 ｜ 覆盖：密码安全 / 网络安全·零信任 / 身份安全 / 数据安全 / 政策标准 / 国际动态</div>
+<div class="win">承接：11月第1周（10.31—11.05）｜ 另含乌镇峰会（11.2—11.5）补收条目</div>
+</header>
+
+<div class="cards">
+<div class="card"><b>18</b><span>条企业级动态（国内14 + 国际4）</span></div>
+<div class="card"><b>2</b><span>项结构性事件：CA系发PQC产品 / IAM厂商拿CA牌照</span></div>
+<div class="card"><b>9</b><span>条重点中标与采购情报</span></div>
+<div class="card"><b>3</b><span>项政策标准：物联网密码论坛 / GB 48567 / 新修订网络安全法</span></div>
+</div>
+
+<div class="insight"><b>本周一句话：</b>两条“边界”同时被打破——<b>CFCA（CA机构）开始卖后量子产品</b>，<b>竹云（IAM厂商）拿到了电子认证服务许可证</b>。前者说明“身份基础设施厂商向下做密码产品”，后者说明“身份管理厂商向上拿CA牌照”，<b>我方所在的中间地带正在被两侧同时挤压</b>。</div>
+
+<h2 class="sec">一、两条结构性信号（本周最需要盯的两件事）</h2>
+
+<div class="box">
+<div class="co prio"><span class="co-name">CFCA｜推出首款抗量子密码产品 SVS-PQC 签名验签服务器</span><span class="co-date">11月12日</span><span class="badge hot">CA系首个PQC产品</span><span class="tag">后量子</span></div>
+<p>由CFCA全资子公司<b>北京中金国信科技有限公司</b>自主研发，是CFCA抗量子产品系列的<b>首款产品</b>。参数与路线值得逐条对照：</p>
+<ul>
+<li><b>算法覆盖</b>：国际标准 <b>ML-DSA-44/65/87</b>（签名）+ <b>ML-KEM-512/768/1024</b>（密钥封装），最高达 <b>NIST 5 级</b>安全强度；同时兼容 SM2、RSA 传统算法</li>
+<li><b>证书管理</b>：支持抗量子数字证书<b>全生命周期</b>（创建、CSR、导入/查看/删除），证书状态与绑定关系全程可见可审计</li>
+<li><b>架构</b>：“双层、松耦合、模块化”——管理面与接口面解耦；业务接口<b>直接输出抗量子能力，不依赖经典算法中间转换</b></li>
+<li><b>迁移设计</b>：同一管理界面并行承载传统证书与抗量子证书，操作流程一致，降低运维切换成本</li>
+</ul>
+<div class="insight"><b>为什么这条最重要：</b>此前后量子在国内主要是“方案+课题+迁移平台”，<b>CFCA第一个把PQC做成了可交付的硬件设备（签名验签服务器）</b>。而我方在这个品类的对外表述至今基本空白——这意味着“后量子”正在从<del>概念竞争</del>转向<b>产品目录竞争</b>，晚一步就会被写进别人的技术规范书里。</div>
+</div>
+
+<div class="box">
+<div class="co prio"><span class="co-name">竹云科技｜获工信部《电子认证服务许可证》</span><span class="co-date">本周披露</span><span class="badge hot">身份厂商跨界拿CA牌照</span><span class="tag">身份安全</span></div>
+<p>竹云通过工信部审查获得<b>《电子认证服务许可证》</b>，官方表述是“从身份管理技术的提供者，跃升为国家级信任服务的签发者”。定位明确指向：<b>把AI智能体身份治理能力与电子认证服务融合</b>，面向政务云、大型央国企、金融机构，为“人员、系统、智能体及关键数据”提供可验证、可追溯、可管控的信任支撑；已深度参与雄安新区数字身份基础设施建设。</p>
+<div class="insight"><b>这条对中安云科是直接的竞争信号：</b>过去“CA牌照”是我方相对IAM厂商的护城河，现在IAM厂商拿到了同样的牌照，而它们在<b>身份编排、智能体身份、权限治理</b>上的产品化程度普遍强于传统CA。<b>我方的应对只能是反向补齐“身份+权限”能力，把证书从“签发物”做成“身份治理的凭证”</b>，否则在智能体身份这个新品类上会被降维。</div>
+</div>
+
+<h2 class="sec">二、密码安全：三未合同落地、江南天安金融连中、格尔移动扩容</h2>
+
+<div class="box">
+<div class="co"><span class="co-name">三未信安</span><span class="co-date">11月8-9日</span><span class="badge new">合同金额确认</span></div>
+<ul>
+<li><b>中国工业互联网研究院后量子密码基础设备及测试工具采购</b>——11月8日采购合同公示，金额 <b>269万元</b>（上期只知中标，本期金额落定）</li>
+<li><b>华能云南滇东能源1~4号机组DCS/NCS系统商密建设</b>——11月9日中标结果公示，金额 <b>337.30万元</b>（上期仅为候选人公示）</li>
+</ul>
+<p>两周内两单合计 <b>606万</b>，一单是“后量子国家级研究机构”，一单是“能源工控生产控制网”。这两条业务线目前是它区别于其他密码厂商的标签。</p>
+</div>
+
+<div class="box">
+<div class="co"><span class="co-name">江南天安（三未信安控股）</span><span class="co-date">10月30日—11月8日</span><span class="badge new">金融/能源连中</span></div>
+<table>
+<tr><th>时间</th><th>项目</th></tr>
+<tr><td>11/08</td><td>中石化石油勘探开发研究院 风险感知系统许可（预成交）</td></tr>
+<tr><td>11/06</td><td><b>上海农村商业银行 PaaS云平台信创改造—密码产品设备采购</b></td></tr>
+<tr><td>11/04</td><td>数字鹤峰（一期）项目密码服务器采购</td></tr>
+<tr><td>10/30</td><td><b>北京银行2026年加密机设备采购（第二批）第二标段</b></td></tr>
+<tr><td>10/26</td><td>唐山银行 2027年度江南天安密码设备维保（单一来源）</td></tr>
+</table>
+<p><b>模式很清晰：银行加密机新购 + 下一年度维保滚动锁定</b>，加上农商行PaaS云平台信创改造，金融存量基本盘非常稳。这是三未并表后“整机+维保”双轮的直接体现。</p>
+</div>
+
+<div class="box">
+<div class="co"><span class="co-name">格尔软件</span><span class="co-date">11月6-11日</span><span class="badge new">移动扩容287.7万</span><span class="tag">PQC已生产部署</span></div>
+<ul>
+<li><b>中国移动内蒙古2026年商用密码管理系统扩容</b>（11/9）：预算 <b>287.7万元（不含税）</b>，采购密码服务组件1套、数据库加密网关2台、国密堡垒机2台、云服务器密码机2台、SSL安全网关3台、签名验签服务器2台 + 集中监测改造200人天</li>
+<li><b>中国人寿</b>党员信息管理系统—签名验签服务器维保（11/9，中软信创采购）</li>
+<li>11月6日获证券之星“资本力量”行业影响力奖，披露了几条关键事实：<b>2026年4月与国泰海通证券、海光信息联合发布软硬全栈抗量子平滑迁移方案</b>（“商密+抗量子”混合架构），<b>已在国泰海通网上交易系统完成生产级部署</b>，公司称是全球首个金融真实场景落地；上半年发布 <b>AI大模型安全保险箱、AI大模型应用安全护栏、智能体身份管理平台</b> 三款产品；牵头组建“<b>密码+人工智能融合创新发展产业联盟</b>”；2026年7月参与项目获国家科技进步二等奖</li>
+<li>11月5日获华为鸿蒙办公商用密码“<b>同舟奖</b>”，方案已用于华为财务、统计局及多地省市级云盘项目</li>
+</ul>
+</div>
+
+<div class="box">
+<div class="co"><span class="co-name">信安世纪</span><span class="co-date">11月9日</span><span class="badge warn">又一单直接采购</span></div>
+中国电信浙江公司某基地密码安全采购项目——<b>直接采购</b>，理由“有效供应商有且仅有1家”。这是继中原银行SSL网关扩容后，<b>本月第二单“只有一家能做”</b>。ST信安的财务报表不好看，但存量绑定极其牢固。
+</div>
+
+<h2 class="sec">三、合规改造进入“存量换证”阶段：事件证书客户开始付钱</h2>
+
+<div class="box">
+<div class="co prio"><span class="co-name">福建省农信联社｜CA数字证书合规改造 118万元 单一来源</span><span class="co-date">11月10日公示</span><span class="badge hot">现成的需求模板</span></div>
+<p>向<b>北京数字认证（BJCA）</b>采购<b>个人高等级数字证书服务</b>，期限1年，预算 <b>118万元</b>，内容分三块，几乎是一份完整的“新规落地实施清单”：</p>
+<ul>
+<li><b>系统改造</b>：部署新的<b>云签名网关系统</b>，打通业务系统服务端与云服务平台，支撑身份核验、独立协议签署、证书调用、签名操作鉴权全流程；提供 Word/HTML/PNG → PDF/OFD 转换与多文件合并、电子签章</li>
+<li><b>证书申请</b>：实人认证 + 意愿认证（<b>音视频双录</b>留存真实意愿凭证）</li>
+<li><b>证书签名</b>：<b>由事件型证书升级为个人高等级证书</b> + 短信验证</li>
+</ul>
+<div class="insight"><b>这条是我方最该抄的商务模板：</b>北京CA在10月9日公告10月30日停事件证书，福建农信随即在11月10日以单一来源方式采购“事件型证书→个人高等级证书”的升级改造。<b>路径 = 停服公告 → 存量客户合规改造立项 → 单一来源锁定原厂</b>。苏州、北京两地关停事件证书后，同类客户在11-12月会陆续走这条路，谁能提前把“改造清单+预算区间”递给客户，谁就拿单。</div>
+</div>
+
+<div class="box">
+<div class="co"><span class="co-name">CFCA｜印度 eMudhra 根证书事件声明</span><span class="co-date">11月12日</span><span class="badge warn">CA行业风险事件</span></div>
+<p>就“黑客可1秒算出密钥、冒充目标网站”的境外CA根证书事件，CFCA发声：其服务器证书业务不受影响，<b>根证书体系自主建设，与印度eMudhra及其交叉签名方无信任依赖关系，信任链每一环在自有体系内闭合</b>；已向客户通报并提供24小时证书链自查与换证衔接支持。</p>
+<p>同时给出三点用户建议：及时更新浏览器与操作系统；见到“证书不受信任”警告不要点继续；<b>检查自家网站证书由哪家CA签发、何时到期，尽量启用自动轮换与证书监控</b>。</p>
+<div class="insight"><b>可用的传播角度：</b>这是“国产CA自主根 + 证书自动化监控”最好的现实论据。境外CA出问题，国产CA的信任链自主性就成了刚需卖点——但前提是我方要有<b>证书到期监控与自动轮换</b>的可展示能力。</div>
+</div>
+
+<h2 class="sec">四、乌镇峰会补收（11.2—11.5，上期截稿时未完全收录）</h2>
+
+<div class="box">
+<p>2026世界互联网大会乌镇峰会：54个国家和地区、671家企业参展、1000余项新技术新产品。<b>“AI安全”是全场共同关键词</b>。</p>
+<table>
+<tr><th style="width:120px">厂商</th><th>动态</th></tr>
+<tr><td><b>绿盟科技</b></td><td>与中国移动、清华大学联合申报的<b>“超大规模通信网络安全弹性防御关键技术及应用”获大会领先科技奖</b>（436项成果中仅20项入选，央企在网安领域首次获奖）；携“智慧安全4.0”展示</td></tr>
+<tr><td><b>天融信</b></td><td><b>唯一连续三届“双奖”</b>：大模型安全网关系统获“新光”产品奖、智能安全运营一体化协作方案获“新耀”场景奖；天问大模型支撑<b>60余款安全智能体覆盖7大场景</b>；披露2025年我国数据跨境流通总量142.34EB（+14.88%），提出“先体检、再守门、后运营”</td></tr>
+<tr><td><b>安恒信息</b></td><td>四名“X安全数字员工”（安小龙/安小虎/安小风/安小云）<b>直接投入大会安保</b>，分别承担渗透测试、代码审计、安全运营、安全托管；现场发布DAPA框架AI安全治理方案</td></tr>
+<tr><td><b>网易智企·易盾</b></td><td>发布AI原生安全产品体系：<b>CMA审核智能体</b>（出审时长35.7→12.3分钟，准确率99.2%）、<b>DeepGuard人脸鉴伪</b>（AI换脸/视频注入）、<b>Agent Guard</b>（智能体工具调用、权限、行为拦截）</td></tr>
+<tr><td><b>奇安信</b></td><td>连办十一届的“安全创客汇”升级为<b>“AI创客汇”</b>，赛道扩至AI×政务/金融/医疗/交通；前十届130支决赛团队累计融资超65亿元</td></tr>
+</table>
+<div class="insight"><b>注意安恒的打法：</b>把“数字员工”真的派去干大会安保——这是AI安全产品最有效的场景化证言，比任何参数都有说服力。我方做内容时可借鉴：<b>不要讲“AI赋能安全”，要讲“哪个岗位已经被AI替掉了、替掉多少工时”</b>。</div>
+</div>
+
+<h2 class="sec">五、政策标准：三个新增强制/半强制场景</h2>
+
+<div class="box">
+<table>
+<tr><th style="width:210px">事项</th><th>要点</th><th style="width:110px">与我方关系</th></tr>
+<tr><td><b>2026物联网密码应用论坛</b><br><span style="font-size:12px;color:#8a94a6">11月7日·无锡</span></td><td>国家密码管理局、中国密码学会支持，江苏省密码管理局+无锡市政府主办。议题覆盖：数据安全密码应用政策与实践、<b>商用密码标准化探索</b>、人工智能安全标准进展及密码应用、电力工控系统攻击案例。主题“数智联万物，密码促共生”——<b>物联网从“万物互联”迈向“万物智联”，密码保障作用更凸显</b></td><td>物联网+AI是密码新场景，与我方设备证书/密码模组方向一致</td></tr>
+<tr><td><b>GB 48567—2026</b><br>《卫星导航定位基准站网安全要求》</td><td>强制性国标（11月10日发布）。明确要求：<b>原始观测数据须通过有线专网或商用密码技术加密传输</b>；重要数据服务实行用户实名审核与访问控制；数据处理/服务/管理系统须取得<b>等保三级备案</b>；未经批准不得设在军事禁区</td><td><b>新建强制密码场景</b>：测绘/北斗基准站网</td></tr>
+<tr><td><b>新修订《网络安全法》</b>等</td><td>2026年新修订《网络安全法》正式实施；《网络数据安全风险评估办法》《公安机关网络空间安全监督检查办法》陆续出台，网络与数据安全由“软要求”升级为“硬合规”</td><td>合规驱动的预算基本盘持续扩大</td></tr>
+</table>
+</div>
+
+<h2 class="sec">六、招标与价格：中国银行渗透测试出现“腰斩式”报价</h2>
+
+<div class="box">
+<div class="co"><span class="co-name">中国银行互联网应用系统渗透测试（2800人天/2年）</span><span class="co-date">11月9日</span><span class="badge warn">价格战信号</span></div>
+<p>引入3家外部厂商按 5:3:2 比例分配：<b>奇安信 189万元、安恒 117.6万元、天融信 85万元</b>。同一标的、同一工作量，最高与最低报价相差 <b>2.2 倍</b>。天融信以接近腰斩的价格拿下第三份额。</p>
+<div class="insight"><b>判断：</b>安全服务类（人天计费）已经进入明显的价格战，而<b>密码设备类（有资质门槛）价格相对坚挺</b>——本周江南天安北京银行加密机、三未华能337万、格尔移动287.7万，均未出现恶性折价。<b>这反过来印证了“资质壁垒=定价权”</b>，也说明我方不应轻易进入纯人天服务型竞争。</div>
+</div>
+
+<div class="box">
+<h3>本周中标清单（补充）</h3>
+<table>
+<tr><th>企业</th><th>项目</th><th>金额/方式</th></tr>
+<tr><td>三未信安</td><td>中国工业互联网研究院后量子密码基础设备及测试工具</td><td>269万元</td></tr>
+<tr><td>三未信安</td><td>华能云南滇东1~4号机组DCS/NCS商密建设</td><td>337.30万元</td></tr>
+<tr><td>格尔软件</td><td>中国移动内蒙古商用密码管理系统扩容</td><td>287.7万元（不含税）</td></tr>
+<tr><td>北京数字认证</td><td>福建农信CA数字证书合规改造（个人高等级证书）</td><td>118万元·单一来源</td></tr>
+<tr><td>江南天安</td><td>上海农商行PaaS云平台信创改造密码设备 / 北京银行加密机（第二批）</td><td>—</td></tr>
+<tr><td>信安世纪</td><td>中国电信浙江某基地密码安全采购</td><td>直接采购</td></tr>
+<tr><td>奇安信/安恒/天融信</td><td>中国银行渗透测试服务（2800人天）</td><td>189万 / 117.6万 / 85万</td></tr>
+</table>
+</div>
+
+<h2 class="sec">七、国际动态</h2>
+
+<div class="box">
+<div class="co prio"><span class="co-name">DigiCert 数据泄露事件｜CA行业的“核验材料”风险</span><span class="co-date">11月上旬披露</span><span class="badge hot">行业警示</span></div>
+<p>DigiCert 一次<b>基础设施迁移</b>（从VPN后搬至公网）中被创建的非员工账号，因一个授权缺陷默认获得<b>归档客户数据的只读权限</b>。泄露内容含姓名、公司邮箱、电话、地址，部分记录带<b>护照/驾照/水电账单扫描件</b>（身份核验材料）。CA核心服务、CertCentral、DigiCert ONE、已签发证书、客户凭据均未受影响。</p>
+<p>官方根因分析两句原话值得全文引用：<b>“这次迁移被当成基础设施变更处理，而不是安全变更，因此没有触发配套的评审”</b>；<b>“只读权限在归档数据面前等于完全权限”</b>。另有监控缺口：被拦下的访问尝试未产生SIEM告警。</p>
+<div class="insight"><b>对CA同行的三重警示：</b>①身份核验材料的保管等级必须等同于密钥——这些扫描件足够通过客服身份核验，进而改手机号、改银行预留；②“迁移/临时放通/新区域可达”必须触发暴露面重评估；③异常账号检测 ≠ 数据是否被读，需要对象级访问日志。建议我方做一次<b>归档核验材料专项盘点</b>，这在投标的“数据安全能力”章节也是加分项。</div>
+</div>
+
+<div class="box">
+<div class="co"><span class="co-name">PQC 全球落地进度（本期核查）</span><span class="co-date">11月上旬</span></div>
+<ul>
+<li><b>Cloudflare（9月29日数据）</b>：浏览器到Cloudflare的连接中约 <b>70%</b> 已采用混合ML-KEM后量子保护；但<b>源站侧仅约15%</b>——一段连接升级不等于整条链路升级</li>
+<li><b>Apple iMessage PQ3</b>：后量子密钥机制进入日常消息加密，周期性更新密钥，采用传统+后量子混合方案</li>
+<li><b>迁移管理平台市场</b>：全球经验证核心供应商约20家，北美占一半以上；Keyfactor 2025年收购 InfoSec Global 与 CipherInsights，DigiCert 推出 <b>Quantum Central</b>，产品从“一次性评估”转向<b>持续密码态势管理+CBOM+迁移编排</b></li>
+<li><b>政策时间表</b>：美国要求高价值系统 <b>2030年完成密钥建立、2031年完成数字签名</b>迁移；英国NCSC要求 <b>2028年完成发现评估、2031年完成最高优先级、2035年总体完成</b></li>
+<li><b>Thales</b>：CipherTrust平台按“密码敏捷”设计，Luna HSM 支持 NIST 标准化 PQC 算法，提供“盘点—排序—选型—分阶段迁移”全周期服务</li>
+</ul>
+</div>
+
+<h2 class="sec">八、对中安云科的启示</h2>
+
+<div class="box">
+<ul>
+<li><b>① 后量子：从“要不要做”变成“做什么产品”。</b>CFCA已经出签名验签服务器（SVS-PQC），我方如果继续停留在“方案/课题”层面，在技术规范书里就会被动。最短路径是<b>先在现有签名验签服务器/密码机上做“支持ML-DSA+ML-KEM的软件升级版本”</b>，形成可写进标书的产品条目，而不是等下一代硬件。</li>
+<li><b>② 存量换证是本季度最确定的现金流。</b>福建农信118万是模板：云签名网关改造+实人认证+音视频双录+事件证书升高等级。建议立即盘点走事件证书通道的存量客户，按“改造清单+预算区间（80-150万）”做成标准方案书，逐家递送。</li>
+<li><b>③ 应对IAM厂商拿CA牌照。</b>竹云获证意味着“身份+认证”融合成为新竞争面。我方应在下一版产品叙事中明确：<b>证书不只是签发物，而是身份治理的信任根</b>——把证书与权限、行为、智能体身份串起来讲，否则在智能体身份赛道会被IAM厂商抢先定义。</li>
+<li><b>④ 物联网密码是政策明确鼓励的新场景。</b>无锡论坛主题+GB 48567强制国标（北斗基准站网须用商密加密传输）叠加，建议把“设备身份+密码模组”作为一个独立方案包，先切测绘、电力、低空三个方向。</li>
+<li><b>⑤ 做一次归档核验材料专项盘点。</b>DigiCert的教训直接适用CA机构：核验材料泄露=客服身份核验被绕过。<b>建议本周内确认我方归档件的存储权限、访问日志、告警覆盖</b>，这件事同时是投标加分项。</li>
+<li><b>⑥ 内容侧可立即用的两个题：</b>《境外CA根证书出问题，国产CA的信任链为什么更稳》（借eMudhra事件）；《一次“只改路由”的迁移，泄露了护照扫描件》（借DigiCert事件讲安全变更管理）。都有真实事件、有行业针对性、不涉及贬低同行。</li>
+</ul>
+</div>
+
+<h2 class="sec">九、小编评论</h2>
+<div class="box" style="border-left:4px solid #1565c0">
+这周真正让人坐不住的不是某家中标，而是<b>两条边界在同时移动</b>。CFCA把抗量子做成了签名验签服务器——CA机构开始卖密码硬件；竹云拿到电子认证服务许可证——IAM厂商开始签发证书。一个从信任基础设施往下走，一个从身份管理往上走，走的都是我方的位置。以前我们说“我们有牌照”，现在牌照不再是独占优势；以前我们说“我们做密码”，现在做CA的也在做密码产品。这个时候最危险的应对是“什么都加一点”，最有效的应对反而是<b>把“证书作为身份治理信任根”这件事讲透、做实</b>——用一个别人绕不过去的定位，抵住两侧的挤压。另外提醒一句：福建农信那118万，本质上是北京CA自己停服停出来的生意。存量客户的钱，永远是最好赚的钱，前提是你先去找他。
+</div>
+
+<div class="foot">数据来源：中国政府采购网、上市公司公告、厂商官方渠道及公开媒体报道 ｜ 监测窗口 2026.11.06—11.13 ｜ 编制日期 2026-11-13 ｜ 中安云科市场团队</div>
+</div></body>
+</html>
