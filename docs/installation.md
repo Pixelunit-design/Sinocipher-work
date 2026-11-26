@@ -31,6 +31,19 @@ python -X utf8 skills/competitor-wechat-monitor/scripts/fetch_mp_article.py --fi
 
 第三方 wechat-download-api 为可选服务。本次未部署或验证该服务；不能据此承诺完整覆盖所有公众号。未部署时可使用技能描述的检索与公开网页路径。
 
+## 竞品情报技能依赖与检查
+
+在已安装 Python 的终端运行：
+
+```powershell
+python -m pip install openpyxl
+python -X utf8 skills/competitor-cracking-developments/scripts/validate_data.py
+```
+
+上述第二条命令从仓库根目录执行；单独安装时按实际路径调整。
+
+`update_data.py`（数据刷新）、`validate_data.py`（一致性校验）与 `fetch_ipv6.py`（IPv6 抓取）仅使用标准库；`build_excel.py`（资质对比 Excel）需要 openpyxl。校验脚本退出码为 0 才视为数据可用；数据快照日期按技能内 `data/README.md` 的口径记录，引用时应注明快照日期。脚本只验证数据一致性与格式，不验证官方接口当前可达性。
+
 ## 升级
 
 升级前备份自行修改的名单。新版 ZIP 可能覆盖 `assets/data/`，应比较并合并自己的改动后再运行加载检查。
