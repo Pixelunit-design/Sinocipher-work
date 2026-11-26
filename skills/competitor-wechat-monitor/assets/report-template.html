@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{报告标题}</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Microsoft YaHei","PingFang SC",sans-serif; background:#f0f2f5; color:#1f2329; line-height:1.7; }
+  .container { max-width:960px; margin:0 auto; padding:24px 16px; }
+  /* 头部 */
+  .header { background:linear-gradient(135deg,#1e3c72 0%,#2a5298 60%,#4a90d9 100%); color:#fff; border-radius:14px; padding:36px 32px; margin-bottom:20px; }
+  .header h1 { font-size:26px; margin-bottom:8px; }
+  .header .sub { opacity:.85; font-size:14px; }
+  /* 概览卡片 */
+  .summary-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; margin-bottom:24px; }
+  .card { background:#fff; border-radius:10px; padding:16px; text-align:center; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  .card .num { font-size:26px; font-weight:700; color:#2a5298; }
+  .card .label { font-size:12px; color:#86909c; margin-top:4px; }
+  /* 核心趋势 */
+  .trends { background:#fff; border-radius:12px; padding:22px 26px; margin-bottom:24px; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  .trends h2 { font-size:18px; color:#1e3c72; margin-bottom:12px; }
+  .trends li { margin:8px 0 8px 20px; }
+  /* 分类分区 */
+  .category { background:#fff; border-radius:12px; padding:22px 26px; margin-bottom:20px; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  .category h2 { font-size:19px; padding-left:10px; border-left:4px solid #2a5298; margin-bottom:16px; }
+  .count-badge { display:inline-block; background:#eef2f9; color:#2a5298; font-size:13px; border-radius:12px; padding:1px 10px; margin-left:8px; vertical-align:middle; }
+  .item { padding:12px 14px; border-radius:8px; margin-bottom:10px; font-size:14.5px; }
+  .item strong { color:#1e3c72; }
+  .item .meta { display:block; font-size:12px; color:#86909c; margin-top:4px; }
+  /* 各类配色 */
+  .c1 .item { background:#f0f7ff; border-left:3px solid #2a5298; }   /* 新产品 */
+  .c2 .item { background:#f2fbf6; border-left:3px solid #21a35d; }   /* 中标 */
+  .c3 .item { background:#fff8ef; border-left:3px solid #e68a2e; }   /* 会议活动 */
+  .c4 .item { background:#fff1f0; border-left:3px solid #d4380d; }   /* 漏洞威胁 */
+  .c5 .item { background:#f6f4ff; border-left:3px solid #6345c7; }   /* 政策法规 */
+  .c6 .item { background:#f0fbfd; border-left:3px solid #0e9aa7; }   /* 融资并购 */
+  .c7 .item { background:#faf5ff; border-left:3px solid #9b3bc7; }   /* 行业报告 */
+  .c8 .item { background:#fff0f5; border-left:3px solid #c73b6e; }   /* 资本市场 */
+  .c9 .item { background:#f7f7f7; border-left:3px solid #86909c; }   /* 其他 */
+  /* 标签 */
+  .tag { display:inline-block; font-size:11.5px; border-radius:4px; padding:1px 7px; margin-right:6px; background:rgba(42,82,152,.1); color:#2a5298; }
+  .footer { text-align:center; color:#a9b0b8; font-size:12px; padding:16px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>{报告标题，如：2026年11月25日网安企业公众号动态周报}</h1>
+    <div class="sub">{统计窗口：YYYY年M月D日 - M月D日} · 覆盖{N}家重点竞品 · 生成于 WorkBuddy 竞品监控</div>
+  </div>
+
+  <div class="summary-cards">
+    <div class="card"><div class="num">{总条数}</div><div class="label">动态总数</div></div>
+    <div class="card"><div class="num">{覆盖企业数}</div><div class="label">覆盖企业</div></div>
+    <div class="card"><div class="num">{国内条数}</div><div class="label">国内动态</div></div>
+    <div class="card"><div class="num">{国外条数}</div><div class="label">国外动态</div></div>
+  </div>
+
+  <!-- 周报/月报时保留，日报可删 -->
+  <div class="trends">
+    <h2>📌 本期核心趋势</h2>
+    <ul>
+      <li>{趋势1：大白话+行业判断}</li>
+      <li>{趋势2}</li>
+      <li>{趋势3}</li>
+    </ul>
+  </div>
+
+  <div class="category c1">
+    <h2>🚀 新产品发布/认证 <span class="count-badge">{N}条</span></h2>
+    <div class="item"><strong>公司名</strong>：事件一句话描述。<span class="tag">标签</span>
+      <span class="meta">来源：公众号/媒体名 · 日期</span></div>
+  </div>
+
+  <div class="category c2">
+    <h2>🎯 中标项目 <span class="count-badge">{N}条</span></h2>
+    <div class="item"><strong>公司名</strong>：项目名/金额/采购方。<span class="meta">来源 · 日期</span></div>
+  </div>
+
+  <div class="category c3">
+    <h2>🎪 会议与活动 <span class="count-badge">{N}条</span></h2>
+  </div>
+
+  <div class="category c4">
+    <h2>⚠️ 安全漏洞与威胁 <span class="count-badge">{N}条</span></h2>
+  </div>
+
+  <div class="category c5">
+    <h2>📜 政策法规与标准 <span class="count-badge">{N}条</span></h2>
+  </div>
+
+  <div class="category c6">
+    <h2>🤝 融资并购与战略合作 <span class="count-badge">{N}条</span></h2>
+  </div>
+
+  <div class="category c7">
+    <h2>📊 行业报告与市场分析 <span class="count-badge">{N}条</span></h2>
+  </div>
+
+  <div class="category c8">
+    <h2>💰 资本市场动态 <span class="count-badge">{N}条</span></h2>
+  </div>
+
+  <div class="category c9">
+    <h2>🔍 其他值得关注 <span class="count-badge">{N}条</span></h2>
+  </div>
+
+  <div class="footer">内部资料 · 仅供竞品分析参考，不得外传 · 数据来源：各企业公众号及公开渠道</div>
+</div>
+</body>
+</html>
