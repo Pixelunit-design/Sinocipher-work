@@ -2,6 +2,8 @@
 name: competitor-cracking-developments
 description: 中安云科（CA/商用密码厂商）市场部竞品情报调研技能。适用场景：①按周期（每周/半月/增量快报）检索密码安全、零信任、身份安全、数据安全四大方向竞品动态并生成HTML调研报告；②调研竞品资质认证（国密商密认证/网专/IPv6 Ready/电科院EPRI/FIPS/BSI/ISO）并与中安云科对比构建Excel；③IPv6等单项资质对标分析与补证策略；④将调研结果按用户台账五段式格式回填《2026年市场调研日常周常台账.md》。触发条件：用户提到"竞品动态/最新竞品/竞品调研/资质对比/国密证书/IPv6对标/回填台账/周报摘要"。使用已验证工具链：scctc.org.cn商密证书官方接口、ipv6testingcenter.com IPv6接口（scripts/fetch_ipv6.py）、openpyxl、联网检索（WebSearch/备用多源通道，时间过滤方式见workflows.md检索纪律）。
 license: 内部使用
+metadata:
+  version: "1.0.0"
 ---
 
 # 竞品动态与资质调研技能（competitor-cracking-developments）
@@ -45,7 +47,7 @@ license: 内部使用
 - 禁止事项 → `references/constraints.md`
 - 成功/失败案例 → `examples/success-cases.md`、`examples/failure-cases.md`
 - 报告HTML骨架、台账模板、搜索词组、总结口吻 → `templates/templates-all.md`
-- 历史报告全文（10月以来7期）→ `outputs/`（索引 `state/report-index.json`）
+- 历史报告全文（10月以来8期）→ `outputs/`（索引 `state/report-index.json`）
 - 数据刷新/校验/Excel生成脚本 → `scripts/`；交付验收标准 → `tests/acceptance-tests.md`
 
 ## 数据规则（详细说明唯一入口：`data/README.md`）

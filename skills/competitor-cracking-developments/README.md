@@ -11,7 +11,7 @@
 
 ## 数据自包含
 
-技能内置数据快照（快照日 2026-09-07），装上即可用，不需要访问本地电脑；数据刷新靠自带脚本。**数据层说明（数据字典、更新方法、缺失清单）全部集中在一个文件：`data/README.md`。**
+技能内置数据快照，装上即可用，不需要访问本地电脑；数据刷新靠自带脚本。数据日期按数据源分别记录：数据库建立日 2026-09-07，商密最近全量刷新 2026-11-26（`update_data.py` 刷新后自动更新），IPv6 明细可随时用 `fetch_ipv6.py` 实时拉取。**数据层说明（数据字典、权威来源优先级、更新方法、缺失清单）全部集中在一个文件：`data/README.md`。**
 
 ## 安装
 
@@ -20,7 +20,7 @@
 - 项目级：`{workspace}/.workbuddy/skills/competitor-cracking-developments/`
 
 运行期依赖：
-- Python3 标准库：`update_data.py`（刷新）与 `validate_data.py`（校验）无需任何第三方包
+- Python3 标准库：`update_data.py`（刷新）、`validate_data.py`（校验）与 `fetch_ipv6.py`（IPv6抓取）无需任何第三方包
 - **`build_excel.py`（Excel生成）需要 openpyxl**：`pip install -r requirements.txt`
 - WebSearch 类联网检索工具（动态调研任务）
 
@@ -48,10 +48,11 @@ competitor-cracking-developments/
 │   └── companies.json          # ★163家重点企业结构化名单（core/watch优先级+方向分类）
 ├── data/                       # ★内嵌数据快照（装上即用）
 │   ├── README.md               # ★数据层说明唯一入口（字典/权威优先级/更新/缺失清单）
-│   ├── zayk_certs.json         # 中安云科：商密92条 + IPv6 6条
-│   ├── competitor_gm.json      # 竞品商密计数（有效数权威来源）
+│   ├── zayk_certs.json         # 中安云科：商密92条 + 网专19条 + IPv6 6条（含实抓9条待裁决）
+│   ├── competitor_gm.json      # 竞品商密计数（有效数权威来源，2026-11-26全量刷新）
 │   ├── competitor_gm_detail.json / jnkf_gm_detail.json # 竞品商密明细1116+103条
 │   ├── competitor_other_detail.json # 网专/IPv6/FIPS/EPRI明细
+│   ├── ipv6_ready.json         # IPv6 Ready明细（10家竞品94条+中安云科9条，fetch_ipv6.py产出）
 │   ├── summary_all.json        # 163家全量汇总（总数口径）
 │   └── events.jsonl            # ★历史动态事件库（去重依据）
 ├── state/
@@ -61,7 +62,8 @@ competitor-cracking-developments/
 ├── scripts/
 │   ├── update_data.py          # ★数据刷新（结构校验/骤降保护/备份/原子写入/自动复验/退出码）
 │   ├── validate_data.py        # ★数据一致性校验（有效数交叉/状态和/编号重复/覆盖/时间戳）
-│   └── build_excel.py          # ★资质对比Excel生成（包内相对路径，直接运行；需openpyxl）
+│   ├── build_excel.py          # ★资质对比Excel生成（包内相对路径，直接运行；需openpyxl）
+│   └── fetch_ipv6.py           # IPv6 Ready证书抓取（官方接口，仅标准库）
 ├── requirements.txt            # Python依赖（openpyxl）
 ├── tests/
 │   ├── acceptance-tests.md     # ★五类任务验收标准 + 冷启动验收标准
